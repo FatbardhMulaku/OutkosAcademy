@@ -1,0 +1,33 @@
+.courses__filters {
+  .small-title {
+    font-weight: normal;
+    font-size: 25px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .price-range {
+    input[type="range"] {
+      width: 100%;
+    }
+  }
+  & > * {
+    margin: 60px 0;
+  }
+
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+
+  .filter-category {
+    .filter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.form-item {
+  display: flex;
+  flex-direction: column;
+
+  &.text-area {
+    .input-group {
+      height: unset;
+      // flex-direction: row;
+      padding: 20px;
+      border-radius: 30px;
+      align-items: flex-start;
+    }
+  }
+
+  .input-group {
+    height: 45px;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    flex-direction: row-reverse;
+    border-radius: 60px;
+    margin-top: 15px;
+    transition: all 0.3s linear;
+    svg {
+      path,
+      circle,
+      rect {
+        transition: stroke 0.3s linear;
+      }
+    }
+    &:focus-within,
+    &:hover {
+      box-shadow: 0 0 5px 1px rgba(235, 131, 65, 1);
+      border-color: transparent;
+
+      .stroke-style {
+        path,
+        circle,
+        rect {
+          stroke: rgba(235, 131, 65, 1);
+        }
+      }
+      .fill-style {
+        path,
+        circle,
+        rect {
+          fill: rgba(235, 131, 65, 1);
+        }
+      }
+    }
+  }
+  .input-icon {
+    margin-right: 10px;
+  }
+  .eye {
+    cursor: pointer;
+  }
+  input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    outline: none;
+  }
+
+  textarea {
+    border: none;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    resize: none;
+  }
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  .form-item {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.label-in-border {
+  .form-item {
+    position: relative;
+    label {
+      position: absolute;
+      background-color: white;
+      left: 40px;
+      transition: all 0.3s linear;
+    }
+
+    &:focus-within {
+      label {
+        transform: translateY(-20px);
+      }
+    }
+  }
+}

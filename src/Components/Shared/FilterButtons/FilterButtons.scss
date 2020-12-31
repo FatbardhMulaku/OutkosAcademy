@@ -1,0 +1,25 @@
+.filter-buttons {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 80px;
+  .buttons-area {
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+  
+  }
+  .filter-button {
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    padding: 6px 15px;
+    margin: 0 10px;
+    min-width: 60px;
+    border-radius: 80px;
+
+    &.selected {
+      background-color: rgba(235, 131, 65, 1);
+      color: white;
+    }
+  }
+}

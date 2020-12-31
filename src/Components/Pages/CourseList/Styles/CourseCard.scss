@@ -1,0 +1,55 @@
+.course-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(211, 211, 211, 0.3);
+    border-radius: 50px;
+    box-shadow: 0 0 20px 0px rgba(51,51,51,0.3);
+    text-align: center;
+    padding: 30px 50px;
+    width: 100%;
+    justify-content: space-between;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        .small-title{
+          font-weight: normal;
+          font-size: 20px;
+        }
+        svg{
+            margin-right: 40px;
+            height: 60px;
+            width: 60px;
+        }
+    }
+    
+    .paragraph-3{
+        margin: 50px 0;
+        font-size: 15px;
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+
+        .single-course-info{
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+            svg{
+                margin-right: 10px;
+            }
+
+            &:first-of-type{
+                margin-left: 0;
+            }
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+
+}

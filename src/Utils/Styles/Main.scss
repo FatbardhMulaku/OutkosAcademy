@@ -1,0 +1,51 @@
+.main-container {
+  padding: 80px 100px;
+}
+.main-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  font-style: normal;
+}
+.sub-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  font-style: normal;
+}
+.small-title {
+  font-size: 30px;
+  color: rgb(51, 51, 51);
+}
+.paragraph-1 {
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+  line-height: 35px;
+}
+
+.paragraph-2 {
+  font-size: 19px;
+  color: rgb(51, 51, 51);
+  line-height: 30px;
+}
+
+.paragraph-3 {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    padding: 80px 20px;
+  }
+  .main-title {
+    font-size: 30px;
+  }
+  .sub-title {
+    font-size: 25px;
+  }
+  .paragraph-1 {
+    font-size: 19px;
+  }
+}

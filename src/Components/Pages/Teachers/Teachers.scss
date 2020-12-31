@@ -1,0 +1,26 @@
+.teachers__teachers{
+   padding: 80px 0;
+
+   .teachers__teachers-area{
+       width: fit-content;
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       margin: 0 auto;
+      column-gap: 10vw;
+       row-gap: 80px;
+     
+   }
+
+
+   @media screen and (max-width:768px){
+       .teachers__teachers-area{
+           grid-template-columns: 1fr 1fr;
+       }
+   }
+
+   @media screen and (max-width:600px){
+       .teachers__teachers-area{
+           grid-template-columns: 1fr;
+       }
+   }
+}

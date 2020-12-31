@@ -1,0 +1,78 @@
+.svg-card {
+  width: 100%;
+  max-width: 375px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid lightgray;
+  position: relative;
+  transition: all 0.3s linear;
+  svg {
+    path,
+    circle,
+    rect,
+    line {
+      transition: all 0.3s linear;
+    }
+  }
+
+  .paragraph-1 {
+    margin: 30px 0;
+  }
+
+  &.center {
+    align-items: center;
+    text-align: center;
+  }
+  &.borderless {
+    border-color: transparent;
+  }
+
+  &.beforeLeftHalf {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 30%;
+      width: 2px;
+      background-color: rgba(235, 131, 65, 1);
+      top: 50%;
+      left: -2px;
+      transform: translateY(-50%);
+      transition: all 0.3s linear;
+    }
+  }
+
+  &:hover {
+    border-color: rgba(235, 131, 65, 1);
+    .fill-style {
+      path,
+      circle,
+      rect,
+      line {
+        fill: rgba(235, 131, 65, 1);
+      }
+    }
+    .stroke-style {
+      path,
+      circle,
+      rect,
+      line {
+        stroke: rgba(235, 131, 65, 1);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &.hideBeforeIpad {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    &.beforeLeftHalf::before {
+      display: none;
+    }
+  }
+}

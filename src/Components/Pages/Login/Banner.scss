@@ -1,0 +1,41 @@
+.login__banner-content{
+
+    .single-offer{
+        display: flex;
+        align-items: center;
+        margin: 60px 0;
+
+        svg{
+            margin-right: 30px;
+            min-width: 60px;
+            min-height: 60px;
+        }
+
+        .text{
+            .paragraph-1{
+                line-height: 0;
+            }
+            .paragraph-3{
+                color: white;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px){
+        padding-left: 60px;
+        .single-offer{
+            svg{
+                min-width: 30px;
+                min-height: 30px;
+            }
+        }
+    }
+    @media screen and (max-width:540px){
+        padding-top: 60px;
+        .single-offer{
+            &:first-of-type{
+                margin-top: 20px;
+            }
+        }
+    }
+}

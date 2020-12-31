@@ -1,0 +1,17 @@
+.logo {
+  height: 52px;
+  width: 164px;
+  display: block;
+  background-image: url("../../../Assets/Logo.png");
+  background-repeat: no-repeat;
+
+  &.white {
+    background-image: url("../../../Assets/Logo-white.png");
+    width: 234px;
+    height: 64px;
+  }
+  @media screen and (max-width: 1024px) {
+    background-image: url("../../../Assets/Logo-small.png");
+    width: 54px;
+  }
+}

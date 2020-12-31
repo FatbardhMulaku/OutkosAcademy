@@ -1,0 +1,49 @@
+.members-advantages{
+   padding-top: 80px;
+
+    .sub-title{
+        text-align: center;
+         position: relative;
+         width: fit-content;
+         margin: 0 auto;
+        &::before{
+          content: "";
+          position: absolute;
+          width: 50%;
+          height: 3px;
+          top: -30px;
+          background-color: rgba(235,131,65,1);
+          left: 25%;
+        }
+    }
+
+    .benefits-area{
+        display: flex;
+        margin-top: 80px;
+        justify-content: space-between;
+
+       
+    }
+
+    @media screen and (max-width:1024px){
+        .main-container{
+            padding: 80px 20px;
+        }
+    }
+
+    @media screen and (max-width:768px){
+        .benefits-area{
+            display: grid;
+            width: fit-content;
+            grid-template-columns: 1fr 1fr;
+            margin-left:auto;
+            margin-right: auto;
+        }
+    }
+
+    @media screen and (max-width:500px){
+        .benefits-area{
+            grid-template-columns: 1fr;
+        }
+    }
+}

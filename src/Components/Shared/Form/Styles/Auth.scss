@@ -1,0 +1,55 @@
+.register-form {
+.sub-title{
+  text-align: center;
+  font-weight: normal;
+}
+.sign-up__social-icons{
+  width: fit-content;
+  margin: 30px auto;
+}
+  .form-item{
+    margin: 30px 0;
+  }
+  .facebook-icon {
+    margin: 0 40px;
+    path {
+      fill: rgb(60, 90, 154);
+    }
+  }
+  .linkedin-icon {
+    path {
+      fill: rgb(51, 51, 51);
+    }
+  }
+
+  .or-option{
+    display: flex;
+    align-items: center;
+
+    .paragraph-2{
+      min-width: fit-content;
+      margin: 0 20px;
+    }
+    .line{
+      width: 100%;
+      height: 1px;
+      background-color: rgb(51, 51, 51);
+    }
+  }
+  .styled-link{
+    display: inline-block;
+    width: 100%;
+  }
+  .extra{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    a{
+      color: rgba(235,131,65,1);
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+}
