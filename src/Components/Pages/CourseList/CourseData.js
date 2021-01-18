@@ -2,7 +2,7 @@ import { ReactComponent as React } from "../../../Assets/Svg/react.svg";
 import { ReactComponent as Angular } from "../../../Assets/Svg/angular.svg";
 import { ReactComponent as Vue } from "../../../Assets/Svg/vue.svg";
 import { ReactComponent as Wordpress } from "../../../Assets/Svg/wordpress.svg";
-import { ReactComponent as Html } from "../../../Assets/Svg/html5.svg";
+import { ReactComponent as GoLang } from "../../../Assets/Svg/GoLang.svg";
 import { ReactComponent as Python } from "../../../Assets/Svg/python.svg";
 import { ReactComponent as Java } from "../../../Assets/Svg/java.svg";
 import { ReactComponent as Laravel } from "../../../Assets/Svg/laravel.svg";
@@ -32,6 +32,7 @@ export const courses = [
     duration: 16,
     category: [categories.frontend, categories.react],
     svg: <React />,
+    link:"/Courses/react"
   },
   {
     id: "java",
@@ -43,18 +44,7 @@ export const courses = [
     duration: 35,
     category: [categories.backend],
     svg: <Java />,
-  },
-  {
-    id: "html",
-    name: "HTML/CSS Training",
-    description:
-      "HTML is the standard markup language for Web pages. With HTML you can create your own Website. HTML is easy to learn - You will enjoy it!",
-    type: "Online Course",
-    availability: "24/7",
-    price: 70,
-    duration: 7,
-    category: [categories.frontend],
-    svg: <Html />,
+    link:"/Courses/java"
   },
   {
     name: "PHP/Laravel for Beginners",
@@ -65,6 +55,7 @@ export const courses = [
     duration: 20,
     category: [categories.backend],
     svg: <Laravel />,
+    link:"/Courses/php"
   },
   {
     name: "Flutter Mobile for Beginners",
@@ -76,6 +67,7 @@ export const courses = [
     duration: 25,
     category: [categories.mobile],
     svg: <Flutter />,
+    link:"/Courses/flutter"
   },
   {
     name: "UI/UX Design for Beginners",
@@ -87,6 +79,7 @@ export const courses = [
     duration: 6,
     category: [categories.ui, categories.ux],
     svg: <Design />,
+    link:"/Courses/graphic-design"
   },
   {
     name: "Training for Angular",
@@ -97,6 +90,7 @@ export const courses = [
     duration: 25,
     category: [categories.angular, categories.frontend],
     svg: <Angular />,
+    link:"/Courses/angular"
   },
   {
     name: "VueJs Advanced Training",
@@ -108,6 +102,7 @@ export const courses = [
     duration: 12,
     category: [categories.frontend],
     svg: <Vue />,
+    link:"/Courses/vue"
   },
   {
     name: "Introduction to Wordpress",
@@ -118,6 +113,7 @@ export const courses = [
     duration: 4,
     category: [categories.webPlatform, categories.frontend],
     svg: <Wordpress />,
+    link:"/Courses/wordpress"
   },
   {
     name: "Python Training",
@@ -129,5 +125,19 @@ export const courses = [
     duration: 17,
     category: [categories.backend],
     svg: <Python />,
+    link:"/Courses/python"
+  },
+  {
+    id: "Golang",
+    name: "Golang  Training",
+    description:
+      "Go (or Golang) is an open source programming language designed to build fast, reliable, and efficient software at scale.",
+    type: "Online Course",
+    availability: "24/7",
+    price: 70,
+    duration: 7,
+    category: [categories.frontend],
+    svg: <GoLang />,
+    link:"/Courses/Golang"
   },
 ];

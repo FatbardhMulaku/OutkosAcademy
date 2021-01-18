@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Teachers.scss";
 import FilterButtons from "../../Shared/FilterButtons/FilterButtons";
 import TeacherCard from "../../Shared/TeacherCard/TeacherCard";
 import endrit from "../../../Assets/Teachers/endrit.jpg";
@@ -20,7 +19,8 @@ const data = {
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
       img: endrit,
-      imgStyles:"large"
+      imgStyles:"large",
+      id:"endrit-shabani"
     },
     {
       name: "Elvis Sylejmani",
@@ -30,7 +30,8 @@ const data = {
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
       img: elvis,
-      imgStyles:"large"
+      imgStyles:"large",
+      id:"elvis-sylejmani"
     },
     {
       name: "Albrim Paqarizi",
@@ -40,6 +41,7 @@ const data = {
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
       img: albrim,
+      id:"albrim-paqarizi"
     },
   ],
   design: [
@@ -51,6 +53,7 @@ const data = {
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
       img: bleart,
+      id: "bleart-kepuska",
     },
     {
       name: "Rrezon Orllati",
@@ -60,6 +63,7 @@ const data = {
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
       img: rrezon,
+      id: "rrezon-orllati",
     },
     {
       name: "Elmedine Ramushi",
@@ -69,6 +73,7 @@ const data = {
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
       img: elmedine,
+      id: "elmedine-ramushi",
     },
 
     {
@@ -79,6 +84,7 @@ const data = {
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
       img: liberta,
+      id: "liberta-shtimanji",
     },
   ],
   marketing: [],

@@ -1,5 +1,4 @@
 import React from "react";
-import "./TeacherCard.scss";
 import { Link } from "react-router-dom";
 import { ReactComponent as Facebook } from "../../../Assets/Teachers/facebook.svg";
 import { ReactComponent as Instagram } from "../../../Assets/Teachers/instagram.svg";
@@ -10,12 +9,12 @@ const TeacherCard = (props) => {
     <div className="teacher-card">
       <div className={`img ${props.imgStyles}`} style={{ backgroundImage: `url(${props.img})` }}>
         <div className="showOnHover">
-          <Link to="/">View Profile</Link>
+          <Link to={`/teacher-profile/${props.id}`}>View Profile</Link>
         </div>
       </div>
       <h2 className="small-title">{props.name}</h2>
       <h4 className="paragraph-2">{props.position}</h4>
-      <div className="social-links">
+      <div className="social-links flex">
         <a href={props.facebook} rel="noopener noreferrer" target="_blank">
           <Facebook />
         </a>

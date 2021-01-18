@@ -10,8 +10,8 @@ import { courses } from "./CourseData";
 import CourseCard from "./CourseCard";
 const CoursesFilters = () => {
   const [state, setState] = useState({
-    value: null,
-    label: null,
+    value: "dsc",
+    label: "Desceding",
   });
 
   const selectItems = [

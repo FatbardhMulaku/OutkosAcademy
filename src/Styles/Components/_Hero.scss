@@ -1,0 +1,50 @@
+.Course-Hero {
+  padding: 360px 0;
+}
+.ReactBG {
+  background-image: url("../../Assets/Courses/React.jpg");
+  background-attachment: fixed;
+}
+.Hero__wrapper{
+  margin-left: 10% !important;
+  @media only screen and (max-width: 1200px) {
+    margin-left: 0% !important;
+  }
+}
+.C-blackHero>div>p, .C-blackHero>div>h2{
+	color: #333333;
+}
+.C-whiteHero>div>p, .C-whiteHero>div>h2{
+	color: #fff;
+}
+.Hero__wrapper > p {
+  width: 30%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  @media only screen and (max-width: 1200px) {
+    width: 70%;
+  }
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.Hero__wrapper > h2 {
+  font-size: 33px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 576px) {
+    font-size: 22px;
+  }
+}
+
+
+// EndHero Component
+.EndHero{
+  padding: 200px 0;
+  background-image:linear-gradient(to right, #00000050, #00000050), url("../../Assets/Courses/EndHero.jpg");
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './Utils/Styles/Main.scss'
+import './Utils/Styles/Main.scss';
+import "./Styles/tailwind.css";
+import "./Styles/main.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";

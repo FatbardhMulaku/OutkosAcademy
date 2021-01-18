@@ -1,0 +1,108 @@
+.teacher-profile__previous-work {
+  .container {
+    height: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .center{
+      position: absolute;
+      width: 300px;
+      height: 400px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: 40px;
+
+      .subproject-img{
+        width: 100%;
+        max-width: 180px;
+        height: 50px;
+        background-size: 100% 100%;
+        margin: 20px 0;
+      }
+  }
+  .row{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    //   align-items: flex-end;
+
+      &.start{
+          align-items: flex-end;
+      }
+  }
+  .landscape {
+    width: calc(100% - 50px);
+    max-width: 870px;
+    height: 480px;
+    background-size: 100% 100%;
+    border: 1px solid black;
+    border-radius: 40px;
+  }
+
+  .portrait {
+    width: calc(100% - 50px);
+    max-width: 665px;
+    height: 880px;
+    background-size: 100% 300%;
+    background-position-y:top;
+    border: 1px solid black;
+    border-radius: 40px;
+  }
+
+  .project-3{
+      background-size: 100% 300%;
+  }
+  .project-1,.project-2{
+    margin-right: 50px;
+  }
+
+  .ElmedineWorks{
+    /* background-size: cover; */
+    background-position: center;
+  }
+  
+  @media screen and (max-width:1024px){
+    .portrait{
+      background-size: 100% 200%;
+    }
+    .landscape{
+      background-size: 100% 100%;
+    }
+  }
+
+  @media screen and (max-width:600px){
+    .container{
+      flex-direction: column;
+      height: unset;
+      align-items: center;
+    }
+    .portrait,.landscape{
+      width: 100%;
+      margin: 20px 0;
+    }
+    .portrait{
+      height: 400px;
+      background-size: 100% 400%;
+    }
+    .project-1,.project-2{
+      margin-right: 0px;
+    }
+    .row{
+      flex-direction: column;
+    }
+    .center{
+      position: static;
+      transform: translate(0,0);
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import Courses from "./Courses";
 import Filters from "./Filters";
 import "./Styles/CoursesAndFilters.scss";
+
 const CoursesAndFilters = () => {
   return (
     <div className="courses-and-filters">

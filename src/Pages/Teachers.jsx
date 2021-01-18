@@ -1,14 +1,15 @@
-import React from "react";
-import Banner from "../Components/Pages/Teachers/Banner";
-import Header from "../Components/Shared/Header/Header";
-import TeachersArea from "../Components/Pages/Teachers/Teachers";
+import React, { lazy } from "react";
+import WrapSuspense from "../Components/Shared/WrapSuspense";
+
+const LazyLoaded = lazy(() =>
+  import("../Components/Pages/Teachers/index")
+);
+
 const Teachers = () => {
   return (
-    <div>
-      <Header />
-      <Banner />
-      <TeachersArea />
-    </div>
+    <WrapSuspense>
+      <LazyLoaded />
+    </WrapSuspense>
   );
 };
 

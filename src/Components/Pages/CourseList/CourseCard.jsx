@@ -4,9 +4,11 @@ import "./Styles/CourseCard.scss";
 import { ReactComponent as Lighting } from "../../../Assets/Svg/lighting.svg";
 import { ReactComponent as Clock } from "../../../Assets/Svg/clock-dark.svg";
 import { ReactComponent as Dollar } from "../../../Assets/Svg/dollar.svg";
+import { Link } from "react-router-dom";
 const CourseCard = (props) => {
   return (
     <div className="course-card">
+      <Link to={props.link}>
       <div className="top">
         {props.svg}
         <h2 className="small-title">{props.name}</h2>
@@ -24,6 +26,7 @@ const CourseCard = (props) => {
           <Dollar /> {props.price}
         </div>
       </div>
+      </Link>
     </div>
   );
 };
