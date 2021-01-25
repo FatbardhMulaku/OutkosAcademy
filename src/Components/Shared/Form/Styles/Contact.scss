@@ -1,6 +1,10 @@
 .contact-form{
     .form-row{
         margin: 30px 0;
+        &>div:first-child{
+            margin-top: auto;
+          margin-bottom: auto;
+          }
     }
 
     .styled-link{

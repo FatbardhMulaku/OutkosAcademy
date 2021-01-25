@@ -5,7 +5,7 @@ const CoursesInfos = (props) => {
 	return (
 		<div className="CoursesInfos container">
 			{props.infos.map((item, index) => (
-				<div key={index+1} className="CoursesInfos-wrapper hover:shadow-lg">
+				<div key={index+1} className="CoursesInfos-wrapper">
 					<Divider width="30%"/>
 					<h4>{item.title}</h4>
 					<p>{item.desc}</p>

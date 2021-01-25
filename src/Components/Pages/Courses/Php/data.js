@@ -36,3 +36,23 @@ export const SyllabusData = [
     title:"PHP Arrays",
   },
 ];
+
+export const Info = {
+  title:"Learn one of the most valuable Languages",
+  desc:"PHP is one of the most used Programming Languages, it is easy implementable with HTML, so it is accessible by most Developers. It is a skill that will be very useful to you as you can write the most complex scripts with ease..."
+}
+
+export const Skill = {
+  title: "The Teacher of this Course",
+  desc: "Elvis Sylejmani is a very talented Developer who loves to teach others new skills, he will be the right choice for you...",
+  btn: "View Profile",
+  link:"bleart",
+  name:"Elvis Sylejmani",
+  job:"Backend Developer",
+  skills:[
+    {skill:"HTML Support"},
+    {skill:"Variables"},
+    {skill:"Dynamic"},
+    {skill:"Web Appliactions"},
+  ]
+}

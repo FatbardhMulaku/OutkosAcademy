@@ -8,6 +8,7 @@ import EndHero from "../../../Shared/Courses/EndHero";
 import CoursesCard from "../../../Shared/Courses/CoursesCard";
 import CoursesInfos from "../../../Shared/Courses/CoursesInfos";
 import Syllabus from "../../../Shared/Courses/Syllabus";
+import CourseInfo from "../../../Shared/Courses/CourseInfo2";
 import { Banner, Teacher, Card, Info, SyllabusData } from "./data";
 
 const index = () => {
@@ -20,6 +21,8 @@ const index = () => {
         desc={Banner.desc}
         btn={Banner.btn}
       />
+      <CourseInfo />
+      <div className="wordpress__img2 BG" />
       <TeacherSkills
         img={whyimg}
         teacherImg={img}
@@ -30,7 +33,7 @@ const index = () => {
       />
       <CoursesCard cards={Card} />
       <CoursesInfos infos={Info} />
-      <Syllabus Syllabus={SyllabusData}/>
+      <Syllabus Syllabus={SyllabusData} />
       <EndHero />
     </>
   );

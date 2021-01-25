@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../../../../Components/Shared/Header/Header";
 import Hero from "../../../Shared/Courses/Hero";
 import TeacherSkills from "../../../Shared/TeacherProfile/TeacherSkills";
-import { Banner, Teacher, Card, Info, SyllabusData} from "./data";
+import { Banner, Teacher, Card, Infos, SyllabusData, Info} from "./data";
+import CourseInfo from "../../../Shared/Courses/CourseInfo2";
 import whyimg from "../../../../Assets/Courses/sec2.jpg";
 import img from "../../../../Assets/Teachers/endrit.jpg";
 import EndHero from "../../../Shared/Courses/EndHero";
@@ -20,6 +21,10 @@ const index = () => {
         desc={Banner.desc}
         btn={Banner.btn}
       />
+      <CourseInfo 
+        title={Info.title}
+        desc={Info.desc}
+      />
       <TeacherSkills
         img={whyimg}
         teacherImg={img}
@@ -29,7 +34,7 @@ const index = () => {
         title={Teacher.title}
       />
       <CoursesCard cards={Card} />
-      <CoursesInfos infos={Info} />
+      <CoursesInfos infos={Infos} />
       <Syllabus Syllabus={SyllabusData}/>
       <EndHero />
     </>

@@ -5,7 +5,8 @@ import EndHero from "../../../Shared/Courses/EndHero";
 import CoursesCard from "../../../Shared/Courses/CoursesCard";
 import CourseInfo from "../../../Shared/Courses/CourseInfo2";
 import Syllabus from "../../../Shared/Courses/Syllabus";
-import { Banner, Card, SyllabusData } from "./data";
+import TeacherSkill from "../../../Shared/Courses/TeacherSkill";
+import { Banner, Card, SyllabusData, Skill, Info } from "./data";
 
 const index = () => {
   return (
@@ -17,7 +18,19 @@ const index = () => {
         desc={Banner.desc}
         btn={Banner.btn}
       />
-      <CourseInfo />
+      <CourseInfo 
+        title={Info.title}
+        desc={Info.desc}
+      />
+      <TeacherSkill 
+        title={Skill.title}
+        desc={Skill.desc}
+        toLink={Skill.link}
+        skills={Skill.skills}
+        img="TeacherSkill_Elvis BG"
+        name={Skill.name}
+        job={Skill.job}
+      />
       <CoursesCard cards={Card} />
       <Syllabus Syllabus={SyllabusData}/>
       <EndHero />

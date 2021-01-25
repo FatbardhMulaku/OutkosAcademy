@@ -1,0 +1,53 @@
+// ========== Default Title =================
+@mixin defaultTitle($color, $align, $margin) {
+  font-size: 35px;
+  font-weight: bold;
+  color: $color;
+  margin: $margin;
+  text-align: $align;
+  @include respond(sm){
+    font-size: 22px;
+  }
+  @include respond(xs){
+	text-align: center;
+}
+}
+
+// ================ Media Query ====================
+
+// 	xs  -  480px
+// 	sm  -  768px"
+//  md  -  992px"
+//  lg  -  1200px"
+//  xl  -  1600px"
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == xs {
+		@media (max-width: 480px) { @content };
+	}
+	@if $breakpoint == sm {
+		@media (max-width: 768px) { @content };
+	}
+	@if $breakpoint == md {
+		@media (max-width: 992px) { @content };
+	}
+	@if $breakpoint == lg {
+		@media (max-width: 1200px) { @content };
+	}
+	@if $breakpoint == xl {
+		@media (max-width: 1200px) { @content };
+	}
+}
+
+
+// =============== Width-Height ==================
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+// =============== Margin (Left-Right) Auto ==================
+@mixin mx-auto($auto) {
+	margin-left: $auto !important;
+	margin-right: $auto !important;
+}

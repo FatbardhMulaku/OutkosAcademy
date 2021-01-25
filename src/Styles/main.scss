@@ -1,18 +1,26 @@
+// Abstracts
+@import "./Abstracts/variables";
+@import "./Abstracts/mixins";
 
 // Components
 @import "./Components/spinner";
 @import "./Components/Hero";
+@import "./Components/ApplicationForm";
 @import "./Components/TeacherCard";
 @import "./Components/PreviousWork";
 @import "./Components//TeacherSkills";
 @import "./Components/CoursesCard";
 @import "./Components/CoursesInfos";
 @import "./Components/Syllabus";
+@import "./Components//TeacherSkill";
+@import "./Components/UseFeature";
+
 // Base
 @import "./Base/global";
 
 // Pages
 @import "./Pages/Teachers";
+@import "./Pages/About";
 @import "./Pages/React";
 @import "./Pages/Flutter";
 @import "./Pages/JavaBG";

@@ -1,4 +1,104 @@
 .GraphicDesignBG {
-	background-image: linear-gradient(to right, #00000080, #00000080), url("../../Assets/Courses/GraphicDesign.jpg");
-	background-attachment: fixed;
+  background-image: linear-gradient(to right, #00000080, #00000080),
+    url("../../Assets/Courses/GraphicDesign.jpg");
+  background-attachment: fixed;
+}
+.Graphics {
+  padding: 30px 0;
+  &_1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    &--img1 {
+      background-image: url("../../Assets/Courses/GraphicDesign2a.png");
+      width: 300px;
+      height: 320px;
+    }
+    &--img2 {
+      background-image: url("../../Assets/Courses/GraphicDesign2b.png");
+      width: 260px;
+      height: 320px;
+    }
+    &--img3 {
+      background-image: url("../../Assets/Courses/GraphicDesign2c.png");
+      width: 260px;
+      height: 320px;
+    }
   }
+  &_2 {
+    & > div:last-child {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      margin-bottom: 150px;
+    }
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 70px;
+    }
+    &--img1 {
+      background-image: url("../../Assets/Courses/GraphicDesign3a.png");
+      width: 220px;
+      height: 220px;
+    }
+    &--img2 {
+      background-image: url("../../Assets/Courses/GraphicDesign3b.png");
+      width: 220px;
+      height: 220px;
+    }
+    &--img3 {
+      background-image: url("../../Assets/Courses/GraphicDesign3c.png");
+      width: 220px;
+      height: 220px;
+    }
+  }
+  &_3 {
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 40px;
+    }
+    & > div:last-child {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+    }
+    &--box {
+      width: 300px;
+      display: flex;
+	  flex-direction: column;
+	  h3{
+		  text-align: center;
+		  font-size: 23px;
+		  font-weight: bold;
+		  margin-top: 10px;
+	  }
+    }
+    &--img1 {
+      background-image: url("../../Assets/Courses/GraphicDesign4a.png");
+      width: 200px;
+	  height: 200px;
+    }
+    &--img2 {
+      background-image: url("../../Assets/Courses/GraphicDesign4b.png");
+      width: 200px;
+      height: 200px;
+    }
+    &--img3 {
+      background-image: url("../../Assets/Courses/GraphicDesign4c.png");
+      width: 200px;
+      height: 200px;
+    }
+    &--img4 {
+      background-image: url("../../Assets/Courses/GraphicDesign4d.png");
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

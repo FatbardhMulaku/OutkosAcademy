@@ -25,7 +25,10 @@ export const Teacher = {
     },
   ],
 };
-
+export const Info = {
+  title:"Become a Professional Front-End Developer",
+  desc:"Learn everything about ReactJS, JsX, class and function components, props, lifecycle methods, hooks, we got you Covered. You will be able to combine these ideas into a Big Final Project..."
+}
 export const Card = [
   {
     title:"Certificate",
@@ -45,7 +48,7 @@ export const Card = [
   }
 ];
 
-export const Info = [
+export const Infos = [
   {
     title:"Overview",
     desc:"This 13 weeks Software Development program will give you in-depth knowledge of Machine Learning techniques. You will take participation in a few Kaggle competitions and create a full-cycle Machine Learning Solution to a real-life problem."

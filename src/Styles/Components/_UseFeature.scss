@@ -1,0 +1,27 @@
+.UseFeature {
+  padding: 170px 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  @include respond(xs) {
+    padding: 100px 0;
+  }
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      @include defaultTitle(white, center, 10px);
+      margin-bottom: 20px;
+    }
+  }
+}
+.Home--img-1{
+	background-image: linear-gradient(to right, #00000040, #00000040),
+    url("../../Assets/Home/use-feature.jpg");
+}
+.Certification--img-1{
+	background-image: linear-gradient(to right, #00000040, #00000040),
+    url("../../Assets/Certification/bgbaner.jpg");
+}

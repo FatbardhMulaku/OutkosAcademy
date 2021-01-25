@@ -1,14 +1,18 @@
 .Course-Hero {
   padding: 360px 0;
+  @media only screen and (max-width: 400px) {
+    padding: 160px 0;
+    padding-top: 200px;
+  }
 }
 .ReactBG {
   background-image: url("../../Assets/Courses/React.jpg");
   background-attachment: fixed;
 }
 .Hero__wrapper{
-  margin-left: 10% !important;
+  padding-left: 10% !important;
   @media only screen and (max-width: 1200px) {
-    margin-left: 0% !important;
+    padding-left: 1% !important;
   }
 }
 .C-blackHero>div>p, .C-blackHero>div>h2{

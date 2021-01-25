@@ -1,0 +1,197 @@
+.SectionA2 {
+  padding: 120px 0;
+
+  h4 {
+    @include defaultTitle(#333333, center, 10px);
+  }
+  &__box {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include respond(md) {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    & > div:last-child > p {
+	  margin-bottom: 20px;
+	  font-size: 18px;
+      @include respond(md) {
+		margin-top: 43px;
+		font-size: 15px;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+    & > div:last-child {
+      margin: auto 70px;
+      @include respond(lg) {
+        margin: auto 10px;
+      }
+      @include respond(sm) {
+        font-size: 14px;
+      }
+      .list-item {
+        padding: 8px 0 !important;
+      }
+    }
+  }
+  &__img {
+    background-image: url("../../Assets/About/section2.jpg");
+    height: 384px;
+    width: 580px;
+    margin: 0px 50px;
+    @include respond(lg) {
+	  margin: auto 20px;
+	  height: 330px;
+      width: 500px;
+    }
+    @include respond(md) {
+      height: 364px;
+      width: 550px;
+      margin: auto;
+    }
+    @include respond(sm) {
+      width: 310px;
+      height: 200px;
+    }
+  }
+}
+
+// Section 3
+.Courses_Card2 {
+  padding: 70px 0;
+  background-color: $color-secondary;
+  h1 {
+    @include defaultTitle(white, center, 10px);
+    margin-bottom: 30px;
+  }
+  & > div > a:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &--Box {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in;
+    &:hover {
+      border-color: rgb(255, 255, 255);
+    }
+    &:hover h2 {
+      border-color: white;
+      background-color: white;
+      color: black;
+    }
+    &:hover &_img1 {
+      fill: rgba(235, 131, 65, 1);
+      stroke: rgba(235, 131, 65, 1);
+    }
+    h4 {
+      font-size: 22px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      margin-bottom: 12px;
+      margin-top: 10px;
+    }
+    h2 {
+      color: white;
+      text-align: left;
+      font-size: 14px;
+      margin-left: 20px;
+      padding: 5px;
+      background-color: transparent;
+      border-radius: 50%;
+      @include size(25px, 25px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold !important;
+      border: 1px solid white;
+    }
+    p {
+      font-weight: 500;
+      color: rgb(219, 219, 219);
+    }
+    &_img1,
+    &_img2,
+    &_img3,
+    &_img4 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &_img1 {
+      background-image: url("../../Assets/About/icon1.svg");
+      @include size(33px, 42px);
+    }
+    &_img2 {
+      background-image: url("../../Assets/About/icon2.svg");
+      @include size(42px, 42px);
+    }
+    &_img3 {
+      background-image: url("../../Assets/About/icon3.svg");
+      @include size(33px, 42px);
+    }
+    &_img4 {
+      background-image: url("../../Assets/About/icon4.svg");
+      @include size(34px, 42px);
+	}
+	
+	// Become teacher icons card
+
+	&_imgB1,
+    &_imgB2,
+    &_imgB3,
+    &_imgB4 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &_imgB1 {
+      background-image: url("../../Assets/About/iconB1.svg");
+      @include size(40px, 42px);
+    }
+    &_imgB2 {
+      background-image: url("../../Assets/About/iconB2.svg");
+      @include size(42px, 42px);
+    }
+    &_imgB3 {
+      background-image: url("../../Assets/About/iconB3.svg");
+      @include size(42px, 42px);
+    }
+    &_imgB4 {
+      background-image: url("../../Assets/About/iconB4.svg");
+      @include size(42px, 42px);
+    }
+  }
+}
+.About2btn {
+  margin: 20px auto;
+}
+.About--img {
+  background-image: linear-gradient(to right, #00000031, #00000031),
+    url("../../Assets/About/sec4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  @include respond(sm) {
+    height: 280px;
+    border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	background-position: left center ;
+  }
+}

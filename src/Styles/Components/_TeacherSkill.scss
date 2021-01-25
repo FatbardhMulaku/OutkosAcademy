@@ -1,0 +1,116 @@
+.TeacherSkill{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 80px 0;
+	justify-content: space-evenly;
+	&_txt{
+		width: 520px;
+		margin-top: 70px;
+		h2{
+			font-size: 34px;
+			font-weight: bold;
+			color: #333333;
+			margin-bottom: 10px;
+			@media only screen and (max-width: 700px) {
+				font-size: 22px;
+			}
+			@media only screen and (max-width: 480px) {
+				text-align: center;
+			}
+		}
+		p{
+			color: #333333;
+			margin-bottom: 20px;
+			@media only screen and (max-width: 480px) {
+				text-align: center;
+			}
+		}
+		@media only screen and (max-width: 480px) {
+			a{
+				display: flex !important;
+			}
+		}
+	}
+	&_info{
+		margin-top: auto;
+		margin-bottom: auto;
+		@media only screen and (max-width: 480px) {
+			margin: 30px auto;
+		}
+		&>div{
+			padding: 7px 0;
+		}
+	}
+	&_profile{
+		&>div:first-child{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&>div:nth-child(2){
+			display: flex;
+			justify-content: center;
+		}
+		&>div:nth-child(2) >div{
+			background-image: url("../../Assets/Courses/tickss.svg");
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 21px;
+			height: 21px;
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-left: 10px;
+		}
+		h4{
+			font-size: 20px;
+			text-align: center;
+			font-weight: bold;
+			color: rgb(71, 71, 71);
+			margin: 2px 0;
+		}
+		p{
+			width: 220px;
+			text-align: center;
+		}
+		a{
+			background-color: #eb824157;
+			color: #EB8341;
+			padding: 8px 15px;
+			display: flex;
+			justify-content: center;
+			font-weight: bold;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			border-radius: 20px;
+			&:hover{
+				color: white;
+				background-color: #EB8341;
+			}
+		}
+	}
+	&_Bleart{
+		background-image: url("../../Assets/Teachers/bleart.jpg");
+		border-radius:50% ;
+		height: 170px;
+		width: 170px;
+	}
+	&_Elvis{
+		background-image: url("../../Assets/Teachers/elvis.jpg");
+		border-radius:50% ;
+		height: 170px;
+		width: 170px;
+	}
+	&_Endrit{
+		background-image: url("../../Assets/Teachers/endrit.jpg");
+		border-radius:50% ;
+		height: 170px;
+		width: 170px;
+	}
+	&--btn{
+		@media only screen and (max-width: 480px) {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+	}
+}
