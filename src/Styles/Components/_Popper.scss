@@ -1,0 +1,184 @@
+  // ============== index ==================
+  .button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px !important;
+	font-family: "Source Sans Pro", sans-serif !important;
+	text-transform: capitalize;
+	text-decoration: none !important;
+	transition: all 0.35s ease-in;
+	line-height: 20px !important;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin-bottom: 2px;
+  }
+  .button:after {
+	display: block;
+	content: "";
+	border-bottom: 2px solid #006fff;
+	transform: scaleX(0);
+	transition: transform 0.5s ease-in-out;
+	margin-left: 1px;
+	margin-right: 1px;
+  }
+  
+  .a_black {
+	color: #000;
+  }
+  .a_white {
+	color: white !important;
+  }
+  .button:hover:after,
+  .button.active:after,
+  .a_black:hover:after,
+  .a_black.active:after {
+	transform: scaleX(1);
+  }
+  .button:hover,
+  .button:focus,
+  .button.active {
+	color: black;
+	outline: none;
+  }
+  .a_black:hover,
+  .button:focus,
+  .a_black.active {
+	color: black;
+	outline: none;
+  }
+  
+  .navigation_link {
+	display: flex;
+	justify-content: flex-start;
+	width: auto;
+	align-items: center;
+	list-style: none;
+  }
+  
+  .icon_dropdown {
+	pointer-events: none !important;
+  }
+  .icon_dropdown svg {
+	width: 25px;
+	height: 25px;
+  }
+  
+  .arrow [x-placement*="bottom"] {
+	width: 0;
+	height: 0;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	border-bottom: 1em solid white;
+	margin-top: -0.9em;
+	position: absolute;
+	font-size: 7px;
+	width: 3em;
+	height: 3em;
+  }
+  .arrow:before {
+	content: "";
+	margin: auto;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 12px 12px 12px;
+	margin-left: 70px;
+	pointer-events: none !important;
+  }
+  .arrow_blue::before {
+	border-color: transparent transparent #EB8341 transparent;
+  }
+  .arrow_white::before {
+	border-color: transparent transparent #EB8341 transparent;
+  }
+  
+  .popper_item_icon {
+	width: 50px;
+	height: 50px;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+  
+  .about_popper_container {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+  }
+  .about_popper_list {
+	display: flex;
+	flex-flow: row wrap;
+	height: 100%;
+	max-width: 100%;
+	width: auto;
+	margin: 0;
+	list-style: none;
+	align-items: center;
+	padding-left: 0;
+  }
+  .about_popper_list li {
+	display: inline-flex;
+	align-items: center;
+	list-style: none;
+	padding: 5px;
+	width: 230px;
+  }
+  
+  .about_popper_list li a {
+	display: inline-flex;
+	align-items: center;
+	color: #22273e;
+	font-size: 18px;
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	text-transform: capitalize;
+	text-decoration: none !important;
+  
+	-moz-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+  }
+    // ============== Career ==================
+  .about_popper_icon1 {
+	background-image: url("../../Assets/Svg/poper-icon1.svg");
+  }
+  .about_popper_icon2 {
+	background-image: url("../../Assets/Svg/poper-icon2.svg");
+  }
+  .about_popper_icon3 {
+	background-image: url("../../Assets/Svg/poper-icon3.svg");
+  }
+  .about_popper_icon4 {
+	background-image: url("../../Assets/Svg/poper-icon4.svg");
+  }
+  .about_popper_icon5 {
+	background-image: url("../../Assets/Svg/poper-icon5.svg");
+  }
+  .about_popper_icon6 {
+	background-image: url("../../Assets/Svg/poper-icon6.svg");
+  }
+  .about_popper_icon7 {
+	background-image: url("../../Assets/Svg/poper-icon7.svg");
+  }
+  .about_popper_icon8 {
+	background-image: url("../../Assets/Svg/poper-icon8.svg");
+  }
+  .about_popper_icon9 {
+	background-image: url("../../Assets/Svg/poper-icon9.svg");
+  }
+  
+  
+  .about_popper_list {
+	justify-content: center;
+  }
+  .about_popper_container > ul > li {
+	width: 190px;
+	border-radius: 10px;
+  }
+  .about_popper_container > ul > li:hover {
+	background-color: #e2e2e2;
+  }

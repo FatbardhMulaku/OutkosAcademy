@@ -1,20 +1,17 @@
-import React from 'react'
-import './Header.scss'
-import Logo from '../Logo/Logo'
-import Navbar from '../Navbar/Navbar'
-import StyledLink from '../StyledLink/StyledLink'
+import React, { Fragment } from "react";
+import Toolbar from "./Toolbar";
+import MobileMenu from "./MobileMenu/MobileMenu";
+import { useToggle } from "../Hooks/useToggle";
 
-const Header = () => {
-    return (
-      <header className="header">
-          <Logo/>
-          <Navbar/>
-          <div className="auth-links">
-              <StyledLink to="/login" styles="sm text-primary">Login</StyledLink>
-              <StyledLink to="/signup" styles="sm bg-primary">Register</StyledLink>
-          </div>
-      </header>
-    )
-}
+const Header = (props) => {
+  const [isToggled, setToggled] = useToggle(false);
 
-export default Header
+  return (
+    <Fragment>
+        <Toolbar drawerToggle={setToggled} Bcolor={props.BC}/>
+        <MobileMenu drawerToggle={setToggled} isToggled={isToggled} />
+    </Fragment>
+  );
+};
+
+export default Header;

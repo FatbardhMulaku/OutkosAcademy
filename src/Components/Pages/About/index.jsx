@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../../Components/Shared/Header/Header";
 import HeroBanner from "../../Shared/Banner/HeroBanner";
 import Img from "../../../Assets/About/banner.jpg";
 import Section2 from "./SectionA2";
@@ -10,7 +9,6 @@ import { Banner, Card, Info } from "./data";
 const index = () => {
   return (
     <>
-      <Header />
       <HeroBanner
         img={Img}
         style={`md`}

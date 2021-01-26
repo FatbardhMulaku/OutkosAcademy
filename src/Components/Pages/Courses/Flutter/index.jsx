@@ -1,7 +1,6 @@
 import React from "react";
 import whyimg from "../../../../Assets/Courses/sec2.jpg";
 import img from "../../../../Assets/Teachers/albrim-uncut.png";
-import Header from "../../../Shared/Header/Header";
 import Hero from "../../../Shared/Courses/Hero";
 import EndHero from "../../../Shared/Courses/EndHero";
 import TeacherSkills from "../../../Shared/TeacherProfile/TeacherSkills";
@@ -13,7 +12,6 @@ import { Banner, Teacher, Card, Info, SyllabusData } from "./data";
 const index = () => {
   return (
     <>
-      <Header />
       <Hero
         BGimg="FlutterBG C-whiteHero"
         title={Banner.title}

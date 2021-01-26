@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../../Components/Shared/Header/Header";
 import Banner from "./Banner";
 import Features from "./Features";
 import WhatWeOffer from "./WhatWeOffer";
@@ -9,7 +8,6 @@ import { UseFeatures } from "./data";
 const index = () => {
   return (
     <>
-      <Header />
       <Banner />
       <Features />
       <WhatWeOffer />

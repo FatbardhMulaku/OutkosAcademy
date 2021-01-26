@@ -23,7 +23,7 @@ const Register = () => {
   return (
     <div className="register-form">
       <h2 className="sub-title">Register</h2>
-      <div className="sign-up__social-icons">
+      <div className="sign-up__social-icons flex">
         <Google className="google-icon" />
         <Facebook className="facebook-icon" />
         <Linkedin className="linkedin-icon" />

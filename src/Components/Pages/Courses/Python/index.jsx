@@ -1,7 +1,6 @@
 import React from "react";
 import whyimg from "../../../../Assets/Courses/sec2.jpg";
 import img from "../../../../Assets/Teachers/elvis.jpg";
-import Header from "../../../../Components/Shared/Header/Header";
 import Hero from "../../../Shared/Courses/Hero";
 import TeacherSkills from "../../../Shared/TeacherProfile/TeacherSkills";
 import EndHero from "../../../Shared/Courses/EndHero";
@@ -13,7 +12,6 @@ import { Banner, Teacher, Card, Info, SyllabusData } from "./data";
 const index = () => {
   return (
     <>
-      <Header />
       <Hero
         BGimg="PythonBG C-whiteHero"
         title={Banner.title}

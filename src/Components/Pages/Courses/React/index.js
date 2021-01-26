@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../../../Components/Shared/Header/Header";
 import Hero from "../../../Shared/Courses/Hero";
 import TeacherSkills from "../../../Shared/TeacherProfile/TeacherSkills";
 import { Banner, Teacher, Card, Infos, SyllabusData, Info} from "./data";
@@ -14,7 +13,6 @@ import Syllabus from "../../../Shared/Courses/Syllabus";
 const index = () => {
   return (
     <>
-      <Header />
       <Hero
         BGimg="ReactBG C-blackHero"
         title={Banner.title}

@@ -1,0 +1,217 @@
+.searchIcon{
+	display: flex;
+}
+.Store__icon{
+	background-image: url("../../Assets/Svg/store-icon.svg");
+	@include size(23px, 22px);
+	cursor: pointer;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 30px;
+	@include respond(lg){
+		margin-right: 10px;
+	}
+}
+.Heart__icon{
+	background-image: url("../../Assets/Svg/herat.svg");
+	@include size(22px, 20px);
+	cursor: pointer;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 30px;
+	@include respond(lg){
+		margin-right: 15px;
+	}
+}
+// ============== Toolbar ==================
+
+@media (max-width: 1200px) {
+	.searchIcon {
+	  float: right;
+	}
+	.DesktopOnly {
+	  display: none;
+	}
+	.d-login {
+	  display: none;
+	}
+  }
+  @media (min-width: 1200px) {
+	.DrawerToggle {
+	  display: none;
+	  color:  black !important;
+	}
+	.d-login {
+	  display: inline-flex;
+	}
+}
+// ============== NavList ==================
+.nav_list {
+	display: inline-flex;
+  }
+  
+  .nav_list > ul {
+	display: inline-flex;
+	flex-direction: row;
+	height: 100%;
+	margin: 0;
+	list-style: none;
+	align-items: center;
+	padding: 0;
+  }
+
+
+  // ============== NavigationLink ==================
+  .navigation_link {
+	display: flex;
+	justify-content: flex-start;
+	width: auto;
+	align-items: center;
+	list-style: none;
+  }
+  
+  .navigation_link a {
+	margin: 4px 25px;
+	font-size: 18px;
+	font-family: "Source Sans Pro", sans-serif;
+	text-transform: capitalize;
+	text-decoration: none !important;
+	transition: all 0.35s ease-in;
+	line-height: 20px;
+  }
+  .navigation_link a:after {
+	display: block;
+	content: "";
+	border-bottom: 2px solid $color_primary;
+	transform: scaleX(0);
+	transform-origin: 0% 50%;
+	transition: transform 0.5s ease-in-out;
+	margin-left: 1px;
+	margin-right: 1px;
+	padding-top: 2px;
+  }
+  
+  .a_black {
+	color: #000;
+  }
+  .a_white {
+	color: white;
+  }
+  
+  .a_white:hover:after,
+  .a_white.active:after,
+  .a_black:hover:after,
+  .a_black.active:after {
+	transform: scaleX(1);
+  }
+  .a_white:hover,
+  .a_white.active {
+	color: white;
+  }
+  .a_black:hover,
+  .a_black.active {
+	color: black;
+  }
+  // ============== Login-Signup buttons ==================
+  
+  .nav-login {
+	display: inline-flex;
+	flex-direction: row;
+	height: 100%;
+	margin: 0;
+	list-style: none;
+	align-items: center;
+	padding: 0;
+	li > p {
+		font-size: 17px;
+		line-height: 20px;
+		margin: 0;
+		padding: 0 4px;
+	  }
+  }
+  
+  .white-p,
+  .black-p {
+	cursor: pointer;
+	padding: 2px 1px;
+  }
+  .white-p {
+	color: white;
+  }
+  .black-p {
+	color: black;
+  }
+  .black-p:hover {
+	background: #000;
+	color: #fff;
+  }
+  .white-p:hover {
+	background: white;
+	color: black;
+  }
+  @media (max-width: 1200px) {
+	.LoginNav{
+	  display: none !important;
+	}
+  }
+  //================= MobileMenu ======================
+  .activeMobile {
+	color: #EB8341 !important;
+  }
+  .link {
+	text-transform: capitalize;
+	color: #000000;
+	font-size: 1.2rem !important;
+	line-height: 1.3rem !important;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 500;
+	text-decoration: none !important;
+  }
+  .link:hover,
+  .link:focus {
+	color: #757575;
+  }
+  
+  .subMenu_text {
+	background-color: #eb8241cc;
+	color: white;
+	padding: 5px 9px;
+	margin: 2px 0;
+	transition: all 0.9s ease-in-out;
+	border-radius: 12px;
+  }
+  .subMenu_text:hover,
+  .subMenu_text:focus {
+	color: black;
+  }
+  .activeMobile_2 {
+	/* color: cornflowerblue !important; */
+	background-color: #EB8341;
+  }
+  .nav-login-menu{
+	display: flex;
+	list-style: none;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px 0 !important;
+	transition: all 0.4s ease-in;
+	align-items: center;
+  }
+  .nav-login-menu li{
+	transition: all 0.3s ease-in;
+	margin: 5px 7px;
+	border-radius: 20px;
+	width: 80%;
+	font-weight: bold;
+  }
+  .nav-login-menu > li:first-child{
+	  color: #EB8341 !important;
+  }
+  .nav-login-menu p{
+	margin-bottom: 2px !important;
+	font-size: 18px;
+	text-align: center;
+  }
+  .nav-login-menu li:hover{
+	transform: scale(1.05);
+  }

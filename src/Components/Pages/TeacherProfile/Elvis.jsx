@@ -1,6 +1,5 @@
 import React from "react";
 // import { useParams } from "react-router-dom";
-import Header from "../../../Components/Shared/Header/Header";
 import img from "../../../Assets/Teachers/elvis-uncut.png";
 import Banner from "../../../Components/Pages/TeacherProfile/Banner";
 import TeacherSkills from "../../Shared/TeacherProfile/TeacherSkills";
@@ -24,7 +23,6 @@ const Elvis = () => {
 
   return (
     <div>
-      <Header />
       <Banner
         img={img}
         title={TeacherData.elvis.name}
