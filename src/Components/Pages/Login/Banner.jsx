@@ -6,14 +6,11 @@ import Login from "../../Shared/Form/Login";
 import { ReactComponent as Check } from "../../../Assets/Svg/check-rounded.svg";
 import { ReactComponent as Squares } from "../../../Assets/Svg/squares.svg";
 import { ReactComponent as User } from "../../../Assets/Svg/user-check.svg";
-import Header from "../../Shared/Header/Header"
 
 const Banner = () => {
   return (
     <div >
-      <Header />
       <SharedBanner img={img1} content={BannerContent}>
-     
        <Login/>
       </SharedBanner>
     </div>

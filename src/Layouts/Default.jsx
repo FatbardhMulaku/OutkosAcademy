@@ -14,15 +14,19 @@ import Python from "../Pages/Courses/Python";
 import Wordpress from "../Pages/Courses/Wordpress";
 import GoLang from "../Pages/Courses/GoLang";
 import GraphicDesign from "../Pages/Courses/GraphicDesign";
-import Elvis from "../Pages/Teachers/Elvis";
-import Liberta from "../Pages/Teachers/Liberta";
-import Elmedine from "../Pages/Teachers/Elmedine";
+import Arber from "../Pages/Teachers/Arber";
+import Albion from "../Pages/Teachers/Albion";
+import Fjolla from "../Pages/Teachers/Fjolla";
 import BecomeTeacher from "../Pages/BecomeTeacher";
 import Application from "../Pages/Application";
 import Certification from "../Pages/Certification";
 import Contact from "../Pages/Contact";
 import Successes from "../Pages/Successes";
 import Programs from "../Pages/Programs";
+import Bleart from "../Pages/Teachers/Bleart";
+import Albrim from "../Pages/Teachers/Albrim";
+import Fatbardh from "../Pages/Teachers/Fatbardh";
+import Rrezon from "../Pages/Teachers/Rrezon"
 
 const Default = () => {
   return (
@@ -42,15 +46,19 @@ const Default = () => {
         <Route exact path="/Courses/wordpress" component={Wordpress} />
         <Route exact path="/Courses/GoLang" component={GoLang} />
         <Route exact path="/Courses/graphic-design" component={GraphicDesign} />
-        <Route exact path="/teacher-profile/elvis-sylejmani" component={Elvis} />
-        <Route exact path="/teacher-profile/liberta-shtimanji" component={Liberta} />
-        <Route exact path="/teacher-profile/elmedine-ramushi" component={Elmedine} />
+        <Route exact path="/teacher-profile/arber-maksuti" component={Arber} />
+        <Route exact path="/teacher-profile/albion-metolli" component={Albion} />
+        <Route exact path="/teacher-profile/fjolla-sinanaj" component={Fjolla} />
         <Route exact path="/job-opportunities" component={BecomeTeacher} />
         <Route exact path="/application" component={Application} />
         <Route exact path="/certifications" component={Certification} />
         <Route exact path="/contact-us" component={Contact} />
         <Route exact path="/success-stories" component={Successes} />
         <Route exact path="/programs" component={Programs} />
+        <Route exact path="/teacher-profile/bleart-kepuska" component={Bleart} />
+        <Route exact path="/teacher-profile/albrim-paqarizi" component={Albrim} />
+        <Route exact path="/teacher-profile/fatbardh-mulaku" component={Fatbardh} />
+        <Route exact path="/teacher-profile/rrezon-orllati" component={Rrezon} />
       </Switch>
     </div>
   );

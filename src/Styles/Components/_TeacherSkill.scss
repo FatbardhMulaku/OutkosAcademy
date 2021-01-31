@@ -70,6 +70,8 @@
 		p{
 			width: 220px;
 			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		a{
 			background-color: #eb824157;
@@ -95,14 +97,32 @@
 		height: 170px;
 		width: 170px;
 	}
-	&_Elvis{
-		background-image: url("../../Assets/Teachers/elvis.jpg");
+	&_Albrim{
+		background-image: url("../../Assets/Teachers/albrim.jpg");
 		border-radius:50% ;
 		height: 170px;
 		width: 170px;
 	}
 	&_Endrit{
 		background-image: url("../../Assets/Teachers/endrit.jpg");
+		border-radius:50% ;
+		height: 170px;
+		width: 170px;
+	}
+	&_Arber{
+		background-image: url("../../Assets/Teachers/arber2.jpg");
+		border-radius:50% ;
+		height: 170px;
+		width: 170px;
+	}
+	&_Fatbardh{
+		background-image: url("../../Assets/Teachers/fatbardh2.jpg");
+		border-radius:50% ;
+		height: 170px;
+		width: 170px;
+	}
+	&_Rrezon{
+		background-image: url("../../Assets/Teachers/rrezon.jpg");
 		border-radius:50% ;
 		height: 170px;
 		width: 170px;

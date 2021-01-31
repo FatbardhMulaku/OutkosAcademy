@@ -7,7 +7,7 @@ export const Banner = {
   btn: "Apply Now",
 };
 export const Teacher = {
-  name: "Albrim Paqarizi",
+  name: "Fatbardh Mulaku",
   job: "Instructor @ VueJS",
   title: "Why This Course?",
   skills: [

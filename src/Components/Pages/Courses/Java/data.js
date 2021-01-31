@@ -7,7 +7,7 @@ export const Banner = {
   btn: "Apply Now",
 };
 export const Teacher = {
-  name: "Elvis Sylejmani",
+  name: "Arber Maksuti",
   job: "Instructor @ Java",
   title: "Why This Course?",
   skills: [

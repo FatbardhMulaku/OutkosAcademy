@@ -46,10 +46,10 @@ export const SyllabusData = [
 export const Skill = {
   title: "The Teacher of this Course",
   desc:
-    "Endrit Shabani is an Open Minded and Creative Teacher who always gives the best to his Students. ",
+    "Albrim Paqarizi is an Open Minded and Creative Teacher who always gives the best to his Students. ",
   btn: "View Profile",
   link: "bleart",
-  name: "Endrit Shabani",
+  name: "Albrim Paqarizi",
   job: "Frontend Developer",
   skills: [
     { skill: "Variables" },

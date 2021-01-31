@@ -2,10 +2,10 @@ import React, { lazy } from "react";
 import WrapSuspense from "../../Components/Shared/WrapSuspense";
 
 const LazyLoaded = lazy(() =>
-  import("../../Components/Pages/TeacherProfile/Liberta")
+  import("../../Components/Pages/TeacherProfile/Fjolla")
 );
 
-const Liberta = () => {
+const Fjolla = () => {
   return (
     <WrapSuspense>
       <LazyLoaded />
@@ -13,4 +13,4 @@ const Liberta = () => {
   );
 };
 
-export default Liberta;
+export default Fjolla;

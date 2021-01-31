@@ -44,10 +44,10 @@ export const Info = {
 
 export const Skill = {
   title: "The Teacher of this Course",
-  desc: "Elvis Sylejmani is a very talented Developer who loves to teach others new skills, he will be the right choice for you...",
+  desc: "Albrim Paqarizi is a very talented Developer who loves to teach others new skills, he will be the right choice for you...",
   btn: "View Profile",
   link:"bleart",
-  name:"Elvis Sylejmani",
+  name:"Albrim Paqarizi",
   job:"Backend Developer",
   skills:[
     {skill:"HTML Support"},

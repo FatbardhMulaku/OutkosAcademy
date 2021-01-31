@@ -49,3 +49,9 @@ export const Banner = {
 	  items: ["Network Engineering", "System Analysis", "System Integration", "Cyber-Security"],
 	},
   };
+
+  export const UseFeatures = {
+	title: "Start Learning New Things",
+	btn: "Apply Now",
+  };
+  

@@ -1,38 +1,16 @@
 import React, { useState } from "react";
 import FilterButtons from "../../Shared/FilterButtons/FilterButtons";
 import TeacherCard from "../../Shared/TeacherCard/TeacherCard";
-import endrit from "../../../Assets/Teachers/endrit.jpg";
-import elvis from "../../../Assets/Teachers/elvis.jpg";
+import fatbardh from "../../../Assets/Teachers/fatbardh.jpg";
+import arber from "../../../Assets/Teachers/arber2.jpg";
 import albrim from "../../../Assets/Teachers/albrim.jpg";
 import bleart from "../../../Assets/Teachers/bleart.jpg";
 import rrezon from "../../../Assets/Teachers/rrezon.jpg";
-import elmedine from "../../../Assets/Teachers/elmedine.jpg";
-import liberta from "../../../Assets/Teachers/liberta.jpg";
+import fjolla from "../../../Assets/Teachers/fjolla2.jpg";
+import albion from "../../../Assets/Teachers/Albion2.jpg";
 
 const data = {
   programming: [
-    {
-      name: "Endrit Shabani",
-      position: "Frontend developer",
-      facebook: "http://www.facebook.com",
-      instagram: "http://www.instagram.com",
-      behance: "http://www.behance.com",
-      linkedin: "http://www.linkedin.com",
-      img: endrit,
-      imgStyles:"large",
-      id:"endrit-shabani"
-    },
-    {
-      name: "Elvis Sylejmani",
-      position: "Backend developer",
-      facebook: "http://www.facebook.com",
-      instagram: "http://www.instagram.com",
-      behance: "http://www.behance.com",
-      linkedin: "http://www.linkedin.com",
-      img: elvis,
-      imgStyles:"large",
-      id:"elvis-sylejmani"
-    },
     {
       name: "Albrim Paqarizi",
       position: "Frontend developer",
@@ -42,6 +20,28 @@ const data = {
       linkedin: "http://www.linkedin.com",
       img: albrim,
       id:"albrim-paqarizi"
+    },
+    {
+      name: "Fatbardh Mulaku",
+      position: "Frontend developer",
+      facebook: "http://www.facebook.com",
+      instagram: "http://www.instagram.com",
+      behance: "http://www.behance.com",
+      linkedin: "http://www.linkedin.com",
+      img: fatbardh,
+      imgStyles:"large",
+      id:"fatbardh-mulaku"
+    },
+    {
+      name: "Arber Maksuti",
+      position: "Frontend developer",
+      facebook: "http://www.facebook.com",
+      instagram: "http://www.instagram.com",
+      behance: "http://www.behance.com",
+      linkedin: "http://www.linkedin.com",
+      img: arber,
+      imgStyles:"large",
+      id:"arber-maksuti"
     },
   ],
   design: [
@@ -66,25 +66,25 @@ const data = {
       id: "rrezon-orllati",
     },
     {
-      name: "Elmedine Ramushi",
+      name: "Fjolla Sinanaj",
       position: "UI/UX Designer",
       facebook: "http://www.facebook.com",
       instagram: "http://www.instagram.com",
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
-      img: elmedine,
-      id: "elmedine-ramushi",
+      img: fjolla,
+      id: "fjolla-sinanaj",
     },
 
     {
-      name: "Liberta Shtimanji",
+      name: "Albion Metolli", 
       position: "UI/UX Designer",
       facebook: "http://www.facebook.com",
       instagram: "http://www.instagram.com",
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
-      img: liberta,
-      id: "liberta-shtimanji",
+      img: albion,
+      id: "albion-metolli",
     },
   ],
   marketing: [],

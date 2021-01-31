@@ -1,4 +1,97 @@
 .PhpBG {
-	background-image: url("../../Assets/Courses/PHP.jpg");
-	background-attachment: fixed;
+  background-image: url("../../Assets/Courses/PHP.jpg");
+  background-attachment: fixed;
+}
+.PhpSites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  a {
+    border: 1px solid #000;
+    padding: 8px 25px;
+    border-radius: 20px;
+    @include mx-auto(auto);
+    &:hover {
+      border-color: $color-primary;
+      color: $color-primary;
+    }
   }
+  &--box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 35px 0;
+    &__img1,
+    &__img2,
+    &__img3,
+    &__img4,
+    &__img5,
+    &__img6 {
+	  margin: 30px 20px !important;
+	  &:hover {
+        animation: rotate-btn 0.7s linear 1;
+        -webkit-animation: rotate-btn 0.7s linear 1;
+      }
+    }
+    &__img1 {
+      background-image: url("../../Assets/Courses/yahoo.png");
+      @include size(150px, 33px);
+      background-size: contain;
+    }
+    &__img2 {
+      background-image: url("../../Assets/Courses/facebook-1.png");
+      @include size(170px, 33px);
+      background-size: contain;
+    }
+    &__img3 {
+      background-image: url("../../Assets/Courses/wikipedia.png");
+      @include size(50px, 50px);
+    }
+    &__img4 {
+      background-image: url("../../Assets/Courses/tumblr.png");
+      @include size(138px, 28px);
+    }
+    &__img5 {
+      background-image: url("../../Assets/Courses/mailchimp.png");
+      @include size(170px, 38px);
+    }
+    &__img6 {
+      background-image: url("../../Assets/Courses/Group1048.png");
+      @include size(50px, 50px);
+    }
+  }
+}
+.GeneratePDF{
+  padding: 50px 0;
+  padding-bottom: 140px;
+	& > h3 {
+	  @include defaultTitle($color-secondary, center, 10px auto);
+	  margin-bottom: 40px;
+	  @include respond(lg) {
+		margin-bottom: 30px;
+	  }
+	}
+	&__wrapper{
+    display: flex;
+    justify-content: space-around;
+    @include respond(lg){
+      flex-direction: column-reverse;
+    }
+    &--img{
+      background-image: url("../../Assets/Courses/Invoice-amico.png");
+      height: 305px;
+      width: 320px;
+      @include respond(lg){
+        margin-bottom: 30px !important;
+      }
+      @include respond(xs){
+        width: 260px;
+        height: 250px;
+      }
+    }
+    &>div:first-child p{
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+}

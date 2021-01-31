@@ -1,7 +1,7 @@
 import React from "react";
 // import { useParams } from "react-router-dom";
-import img from "../../../Assets/Teachers/elvis-uncut.png";
-import Banner from "../../../Components/Pages/TeacherProfile/Banner";
+import img from "../../../Assets/Teachers/arber.jpg";
+import Banner from "./Banner";
 import TeacherSkills from "../../Shared/TeacherProfile/TeacherSkills";
 import whyimg from "../../../Assets/Teachers-profile/why-img1.jpg";
 import PreviousWork from "../../Shared/TeacherProfile/PreviousWork";
@@ -14,28 +14,28 @@ import projectLogo1 from "../../../Assets/soundto.png";
 import projectLogo2 from "../../../Assets/hireseek.png";
 import projectLogo3 from "../../../Assets/kosovadress.png";
 import projectLogo4 from "../../../Assets/apkx.png";
-import Contact from "../../../Components/Shared/Contact/Contact";
-import { TeacherData } from "../../../Components/Pages/TeacherProfile/data";
+import Contact from "../../Shared/Contact/Contact";
+import { TeacherData } from "./data";
 
-const Elvis = () => {
+const Arber = () => {
   // const params = useParams();
   const subProjects = [projectLogo1, projectLogo2, projectLogo3, projectLogo4];
-
+  const data = TeacherData.arber;
   return (
     <div>
       <Banner
         img={img}
-        title={TeacherData.elvis.name}
-        paragraph={TeacherData.elvis.desc}
+        title={data.name}
+        paragraph={data.desc}
         gender="male"
       />
       <TeacherSkills
         img={whyimg}
         teacherImg={img}
-        skills={TeacherData.elvis.skills}
-        name={TeacherData.elvis.name}
-        job={TeacherData.elvis.job}
-        title={TeacherData.elvis.title}
+        skills={data.skills}
+        name={data.name}
+        job={data.job}
+        title={data.title}
       />
       <PreviousWork
         p1={project1}
@@ -49,4 +49,4 @@ const Elvis = () => {
   );
 };
 
-export default Elvis;
+export default Arber;

@@ -1,6 +1,6 @@
 import React from "react";
 import whyimg from "../../../../Assets/Courses/sec2.jpg";
-import img from "../../../../Assets/Teachers/elvis.jpg";
+import img from "../../../../Assets/Teachers/albrim.jpg";
 import Hero from "../../../Shared/Courses/Hero";
 import TeacherSkills from "../../../Shared/TeacherProfile/TeacherSkills";
 import EndHero from "../../../Shared/Courses/EndHero";

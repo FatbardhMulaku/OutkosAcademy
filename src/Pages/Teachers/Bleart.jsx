@@ -2,10 +2,10 @@ import React, { lazy } from "react";
 import WrapSuspense from "../../Components/Shared/WrapSuspense";
 
 const LazyLoaded = lazy(() =>
-  import("../../Components/Pages/TeacherProfile/Elvis")
+  import("../../Components/Pages/TeacherProfile/Bleart")
 );
 
-const Elvis = () => {
+const Profile = () => {
   return (
     <WrapSuspense>
       <LazyLoaded />
@@ -13,4 +13,4 @@ const Elvis = () => {
   );
 };
 
-export default Elvis;
+export default Profile;

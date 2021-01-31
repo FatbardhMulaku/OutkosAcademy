@@ -5,6 +5,8 @@ import CoursesCard from "../../../Shared/Courses/CoursesCard";
 import CourseInfo from "../../../Shared/Courses/CourseInfo2";
 import Syllabus from "../../../Shared/Courses/Syllabus";
 import TeacherSkill from "../../../Shared/Courses/TeacherSkill";
+import PhpSites from "./PhpSites";
+import GeneratePDF from "./GeneratePDF";
 import { Banner, Card, SyllabusData, Skill, Info } from "./data";
 
 const index = () => {
@@ -20,12 +22,14 @@ const index = () => {
         title={Info.title}
         desc={Info.desc}
       />
-      <TeacherSkill 
+      <GeneratePDF />
+      <PhpSites />
+      <TeacherSkill  
         title={Skill.title}
         desc={Skill.desc}
         toLink={Skill.link}
         skills={Skill.skills}
-        img="TeacherSkill_Elvis BG"
+        img="TeacherSkill_Albrim BG"
         name={Skill.name}
         job={Skill.job}
       />

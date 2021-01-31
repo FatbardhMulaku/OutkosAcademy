@@ -4,7 +4,8 @@ import Img from "../../../Assets/Certification/baners.jpg";
 import Features from "../Certification/Features";
 import WhyOutkos from "../About/SectionA2";
 import SuccessStories from "./SuccessStories";
-import { Banner, FeaturesData } from "./data";
+import UseFeature from "../Certification/UseFeature";
+import { Banner, FeaturesData, UseFeatures } from "./data";
 
 const index = () => {
   return (
@@ -19,6 +20,12 @@ const index = () => {
 	  <Features data={FeaturesData}/>
 	  <SuccessStories />
 	  <WhyOutkos />
+    <UseFeature
+        title={UseFeatures.title}
+        btn={UseFeatures.btn}
+        img="Certification--img-1"
+        style="sm"
+      />
     </>
   );
 };

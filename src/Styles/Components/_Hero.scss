@@ -9,17 +9,19 @@
   background-image: url("../../Assets/Courses/React.jpg");
   background-attachment: fixed;
 }
-.Hero__wrapper{
+.Hero__wrapper {
   padding-left: 10% !important;
   @media only screen and (max-width: 1200px) {
     padding-left: 1% !important;
   }
 }
-.C-blackHero>div>p, .C-blackHero>div>h2{
-	color: #333333;
+.C-blackHero > div > p,
+.C-blackHero > div > h2 {
+  color: #333333;
 }
-.C-whiteHero>div>p, .C-whiteHero>div>h2{
-	color: #fff;
+.C-whiteHero > div > p,
+.C-whiteHero > div > h2 {
+  color: #fff;
 }
 .Hero__wrapper > p {
   width: 30%;
@@ -41,11 +43,12 @@
   }
 }
 
-
 // EndHero Component
-.EndHero{
+.EndHero {
   padding: 200px 0;
-  background-image:linear-gradient(to right, #00000050, #00000050), url("../../Assets/Courses/EndHero.jpg");
+  background-image: linear-gradient(to right, #00000050, #00000050),
+    url("../../Assets/Courses/EndHero.jpg");
+    background-attachment: fixed;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   display: flex;

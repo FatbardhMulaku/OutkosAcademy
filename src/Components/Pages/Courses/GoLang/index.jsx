@@ -5,6 +5,7 @@ import CoursesCard from "../../../Shared/Courses/CoursesCard";
 import CourseInfo from "../../../Shared/Courses/CourseInfo2";
 import Syllabus from "../../../Shared/Courses/Syllabus";
 import TeacherSkill from "../../../Shared/Courses/TeacherSkill";
+import Editor from "../../../Shared/Courses/editor";
 import { Banner, Card, SyllabusData, Skill, Info } from "./data";
 
 const index = () => {
@@ -17,12 +18,13 @@ const index = () => {
         btn={Banner.btn}
       />
       <CourseInfo title={Info.title} desc={Info.desc} />
+      <Editor />
       <TeacherSkill
         title={Skill.title}
         desc={Skill.desc}
         toLink={Skill.link}
         skills={Skill.skills}
-        img="TeacherSkill_Endrit BG"
+        img="TeacherSkill_Albrim BG"
         name={Skill.name}
         job={Skill.job}
       />
