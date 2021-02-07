@@ -2,28 +2,28 @@ import React from "react";
 import StyledLink from "../StyledLink/StyledLink";
 import ListItem from "../ListItem/ListItem";
 
-const TeacherSkill = (props) => {
+const TeacherSkill = ({data, img}) => {
   return (
     <div className="TeacherSkill container">
       <div className="TeacherSkill_txt">
-        <h2>{props.title}</h2>
-        <p>{props.desc}</p>
-        <StyledLink to={`/${props.toLink}`} styles="sm bg-primary TeacherSkill--btn">
+        <h2>{data.title}</h2>
+        <p>{data.desc}</p>
+        <StyledLink to={`/${data.toLink}`} styles="sm bg-primary TeacherSkill--btn">
 		View Profile
         </StyledLink>
       </div>
       <div className="TeacherSkill_info">
-        {props.skills.map((item, index) => (
+        {data.skills.map((item, index) => (
           <ListItem key={index}>{item.skill}</ListItem>
         ))}
       </div>
       <div className="TeacherSkill_profile">
-        <div className={props.img} />
+        <div className={img} />
         <div>
-          <h4>{props.name}</h4>
+          <h4>{data.name}</h4>
           <div />
         </div>
-        <p>{props.job}</p>
+        <p>{data.job}</p>
         <a href="/teachers">
           Follow <div />
         </a>

@@ -26,7 +26,10 @@ import Programs from "../Pages/Programs";
 import Bleart from "../Pages/Teachers/Bleart";
 import Albrim from "../Pages/Teachers/Albrim";
 import Fatbardh from "../Pages/Teachers/Fatbardh";
-import Rrezon from "../Pages/Teachers/Rrezon"
+import Rrezon from "../Pages/Teachers/Rrezon";
+import Shop from "../Pages/Shop";
+import Cart from "../Pages/Cart";
+import Checkout from "../Pages/Checkout";
 
 const Default = () => {
   return (
@@ -59,6 +62,9 @@ const Default = () => {
         <Route exact path="/teacher-profile/albrim-paqarizi" component={Albrim} />
         <Route exact path="/teacher-profile/fatbardh-mulaku" component={Fatbardh} />
         <Route exact path="/teacher-profile/rrezon-orllati" component={Rrezon} />
+        <Route exact path="/shop" component={Shop} />
+        <Route exact path="/cart" component={Cart} />
+        <Route exact path="/checkout" component={Checkout} />
       </Switch>
     </div>
   );

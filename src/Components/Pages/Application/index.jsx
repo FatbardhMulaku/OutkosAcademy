@@ -1,20 +1,19 @@
 import React from "react";
-import HeroBanner from "../../Shared/Banner/HeroBanner";
-import Img from "../../../Assets/About/banner1.jpg";
+import Hero from "../../Shared/Banner/Hero";
 import ApplicationForm from "../../Shared/Application/ApplicationForm";
 import { Banner } from "./data";
 
 const index = () => {
   return (
     <>
-      <HeroBanner
-        img={Img}
+      <Hero
+        img="ApplicationBG White-Hero"
         style={`sm`}
-        title={Banner.title}
-        desc={Banner.desc}
-        btn={Banner.btn}
+        data={Banner}
       />
-	  <ApplicationForm />
+      <div className="minus-top mb-16">
+        <ApplicationForm />
+      </div>
     </>
   );
 };

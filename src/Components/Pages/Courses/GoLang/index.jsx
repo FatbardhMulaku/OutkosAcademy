@@ -13,20 +13,13 @@ const index = () => {
     <>
       <Hero
         BGimg="GoLangBG C-whiteHero"
-        title={Banner.title}
-        desc={Banner.desc}
-        btn={Banner.btn}
+        data={Banner}
       />
       <CourseInfo title={Info.title} desc={Info.desc} />
       <Editor />
       <TeacherSkill
-        title={Skill.title}
-        desc={Skill.desc}
-        toLink={Skill.link}
-        skills={Skill.skills}
         img="TeacherSkill_Albrim BG"
-        name={Skill.name}
-        job={Skill.job}
+        data={Skill}
       />
       <CoursesCard cards={Card} />
       <Syllabus Syllabus={SyllabusData} />

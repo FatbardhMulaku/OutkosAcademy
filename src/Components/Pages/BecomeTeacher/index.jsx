@@ -1,6 +1,6 @@
 import React from "react";
 import HeroBanner from "../../Shared/Banner/HeroBanner";
-import Img from "../../../Assets/About/banner.jpg";
+import Img from "../../../Assets/Home/teacher.jpg";
 import Section2 from "../About/SectionA2";
 import Cards from "../About/SectionA3";
 import ApplicationForm from "../../Shared/Application/ApplicationForm";
@@ -11,16 +11,14 @@ const index = () => {
     <>
       <HeroBanner
         img={Img}
-        style="md"
-        title={Banner.title}
-        desc={Banner.desc}
-        btn={Banner.btn}
+        style={"md"}
+        data={Banner}
       />
       <Section2 />
       <Cards
         cards={Card.cards}
-        style="sm About2btn"
-        imgList="_imgB"
+        style={"sm About2btn"}
+        imgList={"_imgB"}
         title={Card.title}
         btn={Card.btn}
       />

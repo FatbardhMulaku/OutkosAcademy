@@ -1,16 +1,16 @@
 import React from 'react';
 import StyledLink from "../StyledLink/StyledLink";
 
-function Hero(props) {
+function Hero({data, BGimg}) {
 	return (
-		<div className={`${props.BGimg} Course-Hero BG`}>
+		<div className={`${BGimg} Course-Hero BG`}>
 			<div className="Hero__wrapper container">
 				<h2>
-					{props.title}
+					{data.title}
 				</h2>
-				<p>{props.desc}</p>
+				<p>{data.desc}</p>
 				<StyledLink to="/" styles="sm bg-primary">
-					{props.btn}
+					{data.btn}
 				</StyledLink>
 			</div>
 		</div>

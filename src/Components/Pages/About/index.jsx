@@ -12,9 +12,7 @@ const index = () => {
       <HeroBanner
         img={Img}
         style={`md`}
-        title={Banner.title}
-        desc={Banner.desc}
-        btn={Banner.btn}
+        data={Banner}
       />
       <Section2 />
       <Cards

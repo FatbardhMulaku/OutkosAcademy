@@ -1,0 +1,247 @@
+.SingleItem{
+	padding-top: 200px;
+	padding-bottom: 150px;
+	display: flex;
+	flex-direction: column;
+	@include respond(xs){
+		padding-top: 100px;
+	}
+	&C{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		&__img{
+			margin-left: 200px;
+			@media (max-width: 1600px) {
+				margin-left: 0;
+			}
+		}
+		&__body{
+			@include respond(sm){
+				padding-top: 30px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			&>h1{
+				color: $color-primary;
+				font-weight: bold;
+				font-size: 26px;
+			}
+			&>div:nth-child(3){
+				display: flex;
+				margin: 8px 0;
+				p{
+					margin-right: 11px;
+					color: $color-primary;
+					font-weight: bold;
+				}
+				h2{
+					margin-left: 11px;
+				}
+			}
+			&>p{
+				span{
+					color: $color-primary;
+					font-weight: 500;
+					margin-left: 10px;
+				}
+			}
+			&>div:nth-child(5){
+				display: flex;
+				margin: 15px 0;
+				&>button{
+					background-color: #eb8341;
+					color: #fff;
+					padding: 2px 15px;
+					font-weight: bold;
+					border-radius: 5px;
+					font-size: 15px;
+					border: 1px solid transparent;
+					cursor: pointer;
+					/* @media only screen and (max-width: 443px) {
+						font-size: 13px;
+						padding: 3px 10px;
+					} */
+					margin-right: 15px;
+					outline: none;
+					&:hover {
+					color: white;
+					background-color: #eb8241ce;
+					}
+					
+				}
+				p{
+					span{
+						color: $color-primary;
+						font-weight: 500;
+						margin-left: 5px;
+					}
+				}
+			}
+			hr{
+				color: $color-primary;
+				opacity: 0.4;
+				margin: 10px 0;
+			}
+			&>div:nth-child(7){
+				display: flex;
+				flex-wrap: wrap;
+				margin: 20px 0;
+				@include respond(sm){
+					justify-content: center;
+				}
+				:hover{
+					color: white;
+					background-color: #eb8241;
+				}
+				:focus{
+					color: white;
+					background-color: #eb8241;
+				}
+				&>button{
+					border: 1px solid #eb8341;
+					padding: 10px;
+					outline: none;
+					width: 110px;
+					border-radius: 10px;
+					margin: 5px;
+				}
+			}
+			&>div:nth-child(9){
+				display: flex;
+				margin: 25px 0;
+				@include respond(sm){
+					justify-content: center;
+				}
+				&>button{
+					padding: 8px 25px;
+					outline: none;
+					border-radius: 20px;
+					font-weight: 500;
+				}
+				&>button:first-child{
+					color: $color-primary;
+					background-color: #eb824149;
+					&:hover{
+						background-color: $color-primary;
+						color: white;
+					}
+				}
+				&>a{
+					color: #6987BC;
+					background-color: #6987bc56;
+					padding: 8px 25px;
+					outline: none;
+					border-radius: 20px;
+					font-weight: 500;
+					margin-left: 15px;
+					&:hover{
+						background-color: #6987BC;
+						color: #fff;
+					}
+				}
+			}
+		}
+	
+		&__side{
+			width: 200px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin-right: 200px;
+			@media (max-width: 1600px) {
+				margin-right: 0;
+			}
+			@include respond(lg){
+				width: 400px;
+				justify-content: space-evenly;
+				margin-top: 40px;
+			}
+			h1{
+				text-align: center;
+				font-size: 22px;
+				font-weight: 500;
+			}
+			p{
+				text-align: center;
+			}
+	
+			&--img1{
+				background-image: url("../../Assets/Shop/booksvg.svg");
+				width: 84px;
+				height: 60px;
+				margin: 0px 20px;
+			}
+			&--img2{
+				background-image: url("../../Assets/Shop/payment.svg");
+				width: 60px;
+				height: 80px;
+				margin: 0px 20px;
+			}
+		}
+	
+		&img1,&img2,&img3,&img4,&img5,&img6,&img7,&img8{
+			height: 400px;
+			width: 250px;
+			border-radius: 15px !important;
+			background-size: contain !important;
+			
+			/* @media only screen and (max-width: 430px) {
+				@include mx-auto(auto);
+				width: 180px;
+				margin-bottom: 15px;
+			} */
+		}
+		&img1{
+			background-image: url("../../Assets/Shop/book1full.jpg");
+			
+		}
+		&img2{
+			background-image: url("../../Assets/Shop/book2full.png");
+		}
+		&img3{
+			background-image: url("../../Assets/Shop/book3full.png");
+		}
+		&img4{
+			background-image: url("../../Assets/Shop/book4full.png");
+		}
+		&img5{
+			background-image: url("../../Assets/Shop/book5full.png");
+		}
+		&img6{
+			background-image: url("../../Assets/Shop/book6full.png");
+		}
+		&img7{
+			background-image: url("../../Assets/Shop/book7full.png");
+		}
+		&img8{
+			background-image: url("../../Assets/Shop/book8full.png");
+		}
+	}
+	
+}
+
+
+// ===== SliderBook =======
+.SliderBook{
+	padding-top: 100px;
+	&>h2{
+		@include defaultTitle($color-secondary, center, 10px);
+		font-size: 24px;
+	}
+	&__books{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		&>div:nth-child(2){
+			display: none !important;
+		}
+		&>div:nth-child(4){
+			display: none !important;
+		}
+		&>div:nth-child(7){
+			display: none !important;
+		}
+	}
+}

@@ -1,15 +1,21 @@
 import React from "react";
-import Banner from "./Banner";
+import Hero from "./Hero";
 import Features from "./Features";
 import WhatWeOffer from "./WhatWeOffer";
 import UseFeature from "../Certification/UseFeature";
+import Courses from "./Courses";
+import Teachers from "./Teachers";
 import { UseFeatures } from "./data";
 
 const index = () => {
   return (
     <>
-      <Banner />
-      <Features />
+      <Hero />
+      <div className="minus-top mb-16">
+        <Features />
+      </div>
+      <Courses />
+      <Teachers />
       <WhatWeOffer />
       <UseFeature
         title={UseFeatures.title}

@@ -13,9 +13,7 @@ const index = () => {
     <>
       <Hero
         BGimg="GraphicDesignBG C-whiteHero"
-        title={Banner.title}
-        desc={Banner.desc}
-        btn={Banner.btn}
+        data={Banner}
       />
       <CourseInfo 
         title={Info.title}
@@ -23,13 +21,8 @@ const index = () => {
       />
       <Graphics />
       <TeacherSkill 
-        title={Skill.title}
-        desc={Skill.desc}
-        toLink={Skill.link}
-        skills={Skill.skills}
         img="TeacherSkill_Bleart BG"
-        name={Skill.name}
-        job={Skill.job}
+        data={Skill}
       />
       <CoursesCard cards={Card} />
       <Syllabus Syllabus={SyllabusData} />

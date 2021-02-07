@@ -1,0 +1,77 @@
+.HomeCourses{
+	&>h1{
+		@include defaultTitle($color-secondary, center, 10px);
+		margin-bottom: 50px;
+	}
+	&-area{
+		/* display: flex;
+		flex-wrap: wrap;
+		justify-content: center; */
+		.course-card{
+			box-shadow: none;
+			border-color: rgb(175, 175, 175);
+			@include respond(xs){
+				padding: 30px 20px;
+			}
+		}
+		&>div{
+			padding: 30px;
+			margin: 20px;
+			@include respond(xs){
+				padding: 0px;
+				margin: 0px;
+			}
+		}
+	}
+}
+.slick-slide {
+	&>div{
+		margin: 10px;
+		@include respond(xs){
+			margin-bottom: 25px
+		}
+	}
+}
+.HomeTeachers{
+	padding: 30px 0;
+	padding-top: 130px;
+	&>h1{
+		@include defaultTitle($color-secondary, center, 10px);
+		margin-bottom: 50px;
+		
+	}
+	.TeacherSkill_profile > a{
+		background-color: #eb824131;
+		&:hover{
+			background-color: #eb8241;
+		}
+	}
+	.TeacherInfo__links{
+		display: none;
+	}
+	.TeacherInfo__follow{
+		border-bottom: none;
+	}
+	.TeacherInfo {
+		margin-right: auto;
+		margin-left: auto;
+		@include respond(xs){
+			width: 265px;
+		}
+	}
+	.slick-dots{
+		@media (max-width: 1800px) {
+			padding-right: 4%;
+		}
+		@media (max-width: 1300px) {
+			padding-right: 6%;
+		}
+		@media (max-width: 768px) {
+			padding-right: 10%;
+		}
+		@include respond(xs){
+			padding-right: 0%;
+		}
+		
+	}
+}

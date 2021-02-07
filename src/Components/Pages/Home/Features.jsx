@@ -1,8 +1,8 @@
 import React from "react";
 import "./Styles/Features.scss";
 import img1 from "../../../Assets/Home/real-world-insights.png";
-import img2 from "../../../Assets/Home/practical-skills.png";
-import img3 from "../../../Assets/Home/unique-learning.png";
+/* import img2 from "../../../Assets/Home/practical-skills.png";
+import img3 from "../../../Assets/Home/unique-learning.png"; */
 import Feature from "../../Shared/Features/Features";
 const data = [
   {
@@ -13,7 +13,7 @@ const data = [
     link: "Read More",
     img: img1,
   },
-  {
+ /*  {
     title: "Practical Skills",
     title2: "Win Decisions, Trust and Promotions",
     paragraph:
@@ -31,7 +31,7 @@ const data = [
     to: "/",
     link: "Read More",
     img: img3,
-  },
+  }, */
 ];
 const Features = () => {
   return (

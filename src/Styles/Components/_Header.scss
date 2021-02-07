@@ -1,5 +1,12 @@
 .searchIcon{
 	display: flex;
+	&>div:first-child{
+		display: flex;
+		a{
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+	}
 }
 .Store__icon{
 	background-image: url("../../Assets/Svg/store-icon.svg");
@@ -8,8 +15,20 @@
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-right: 30px;
+	position: relative;
 	@include respond(lg){
 		margin-right: 10px;
+	}
+	p{
+		position: absolute;
+		top: -5px;
+		right: -5px;
+		background-color: #EB8341;
+		color: #fff;
+		font-size: 13px;
+		border-radius: 50%;
+		padding: 0px 5px;
+		font-weight: bold;
 	}
 }
 .Heart__icon{

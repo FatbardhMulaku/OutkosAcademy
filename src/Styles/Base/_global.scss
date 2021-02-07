@@ -13,3 +13,31 @@
 /* .Programs > div:nth-child(4){
   padding-top: 0px;
 } */
+.minus-top{
+  margin-top: -80px;
+  @include respond(md){
+    margin-top: -20px;
+  }
+}
+
+.indicators li {
+  width: 25px !important;
+  height: 15px !important;
+}
+.indicators > li > button::before{
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #eb8341 !important;
+}
+.slick-dots li.slick-active button:before {
+  font-size: 16px !important;
+  color: #d16928 !important;
+}
+.slick-dots li button:before {
+  font-size: 16px !important;
+  color: #eb8241 !important;
+}
+.slick-arrow::before{
+  color:#eb8241 !important;
+  font-size: 34px !important;
+}

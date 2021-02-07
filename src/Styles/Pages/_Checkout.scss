@@ -1,0 +1,318 @@
+.Checkout{
+	padding: 150px 0;
+	display: flex;
+	justify-content: space-between;
+	@include respond(lg){
+		flex-direction: column-reverse;
+	}
+	&__info{
+		width: 63%;
+		@include respond(lg){
+			width: 100%;
+			margin-top: 30px;
+		}
+		hr{
+			color: rgb(201, 201, 201);
+			margin: 50px 0;
+		}
+		p{
+			text-align: center;
+			margin-bottom: 5px;
+		}
+		&>div:last-child{
+			border: 1px solid rgb(170, 170, 170);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			border-radius: 11px;
+		}
+		&>div:first-child{
+			&>div:nth-child(2){
+				&>div:first-child{
+					&>div:last-child{
+						display: flex;
+						justify-content: flex-end;
+						@include respond(md){
+							justify-content: center;
+						}
+						button{
+							padding: 6px 40px;
+							border-radius: 10px;
+							outline: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__Paypal, &__GooglePay, &__ApplePay{
+		width: 200px;
+		height: 40px;
+		margin: 20px 20px;
+		cursor: pointer;
+	}
+	&__Paypal{
+		background-image: url("../../Assets/Shop/paypal.jpg");
+	}
+	&__GooglePay{
+		background-image: url("../../Assets/Shop/pay1.jpg");
+	}
+	&__ApplePay{
+		background-image: url("../../Assets/Shop/pay2.jpg");
+	}
+	&__cart{
+		width: 35%;
+		@include respond(lg){
+			width: 100%;
+		}
+		&>div{
+			padding: 0px !important;
+			&>div:first-child{
+				&>div{
+					padding: 0 20px;
+					@include respond(xs){
+						padding: 15px;
+					}
+					&>div:first-child{
+						width: 150px;
+						height: 160px;
+						&>div{
+							width: 100%;
+							height: 100%;
+						}
+					}
+					&>div:last-child{
+						&>div:first-child{
+							margin-top: auto;
+							margin-bottom: auto;
+						}
+						&>p{
+							align-self: center;
+							padding: 4px 10px;
+						}
+						h1{
+							font-size: 20px;
+						}
+						h2{
+							font-size: 15px;
+							color: rgb(110, 110, 110);
+						}
+						h4{
+							font-size: 23px;
+							margin: 5px 0;
+						}
+					}
+				}
+			}
+			&>div:last-child{
+				&>div{
+					margin-left: auto;
+    				margin-right: auto;
+					&>div:last-child{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+// ========== Account =============
+.Account{
+	padding: 10px;
+	&>div:first-child{
+		display: flex;
+		justify-content: space-between;
+		@include respond(xs){
+			flex-direction: column;
+			align-items: center;
+		}
+		&>h1{
+			font-size: 25px;
+			color: $color-secondary;
+		}
+		&>p{
+			span{
+				color: $color-primary;
+				margin-left: 10px;
+			}
+		}
+	}
+	form{
+		padding: 20px 0;
+		&>div:first-child{
+			display: flex;
+			justify-content: space-between;
+			@include respond(lg){
+				flex-direction: column;
+			}
+			&>div{
+				width: 48%;
+				@include respond(lg){
+					width: 100%;
+					margin: 5px 0;
+				}
+				&>div:last-child{
+					margin-top: 5px;
+				}
+			}
+		}
+		&>div:nth-child(2){
+			margin: 10px 0;
+			&>div:last-child{
+				margin-top: 5px;
+			}
+		}
+		&>div:nth-child(3){
+			margin: 10px 0;
+			&>div:last-child{
+				margin-top: 5px;
+			}
+		}
+		&>div:nth-child(4){
+			display: flex;
+			justify-content: space-between;
+			@include respond(lg){
+				flex-direction: column;
+			}
+			&>div{
+				width: 48%;
+				@include respond(lg){
+					width: 98%;
+					margin: 5px 0;
+				}
+				&>div:last-child{
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+}
+// ========== Shipping =============
+.Shipping{
+	padding: 15px;
+	&>h1{
+		font-size: 25px;
+		color: $color-secondary;
+	}
+	&>div:nth-child(2){
+		margin: 15px 0;
+		&>div:last-child{
+			margin-top: 5px;
+		}
+	}
+	&>div:nth-child(3){
+		margin: 15px 0;
+		&>div:last-child{
+			margin-top: 5px;
+		}
+	}
+	&>div:nth-child(4){
+		display: flex;
+		justify-content: space-between;
+		margin: 15px 0;
+		@include respond(lg){
+			flex-direction: column;
+		}
+		&>div{
+			width: 48%;
+			@include respond(lg){
+				width: 100%;
+				margin: 5px 0;
+			}
+			&>div:last-child{
+				margin-top: 5px;
+			}
+		}
+		&>div:first-child{
+			display: flex;
+			align-items: flex-end;
+			&>div{
+				width: 100%	;
+			}
+		}
+	}
+	&>div:nth-child(5){
+		margin: 15px 0;
+		&>div:last-child{
+			margin-top: 5px;
+		}
+	}
+}
+// ========== Payment =============
+.Payment{
+	padding: 15px;
+	&>h1{
+		font-size: 25px;
+		color: $color-secondary;
+	}
+	&>div:nth-child(2){
+		margin: 15px 0;
+		display: flex;
+		justify-content: space-between;
+		@include respond(xs){
+			flex-direction: column;
+			align-items: center;
+		}
+		h2{
+			margin-top: auto;
+			margin-bottom: auto;
+			font-weight: 500;
+			font-size: 18px;
+		}
+		&>div:last-child{
+			display: flex;
+		}
+	}
+	&__visa, &__master, &__amex,&__discover{
+		width: 60px;
+		height: 37px;
+		border-radius: 5px;
+		margin: 10px;
+	}
+	&__visa{
+		background-image: url("../../Assets/Shop/visa.jpg");
+	}
+	&__master{
+		background-image: url("../../Assets/Shop/master.jpg");
+	}
+	&__amex{
+		background-image: url("../../Assets/Shop/amex.jpg");
+	}
+	&__discover{
+		background-image: url("../../Assets/Shop/discover.jpg");
+	}
+	&>div:nth-child(3){
+		margin: 15px 0;
+		&>div:last-child{
+			margin-top: 5px;
+		}
+	}
+	&>div:nth-child(4){
+		margin: 15px 0;
+		&>div:last-child{
+			margin-top: 5px;
+		}
+	}
+	&>div:nth-child(5){
+		display: flex;
+		justify-content: space-between;
+		margin: 15px 0;
+		@include respond(lg){
+			flex-direction: column;
+		}
+		&>div{
+			width: 48%;
+			@include respond(lg){
+				width: 100%;
+				margin: 5px 0;
+			}
+			&>div:last-child{
+				margin-top: 5px;
+			}
+		}
+	}
+}

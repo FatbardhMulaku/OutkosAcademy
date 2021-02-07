@@ -8,6 +8,7 @@ import Input from "../../Shared/Form/Input";
 import Select from "../../Shared/Form/Select";
 import { courses } from "./CourseData";
 import CourseCard from "./CourseCard";
+
 const CoursesFilters = () => {
   const [state, setState] = useState({
     value: "dsc",

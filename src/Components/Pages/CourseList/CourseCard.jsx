@@ -1,8 +1,8 @@
 import React from "react";
 import "./Styles/CourseCard.scss";
 
-import { ReactComponent as Lighting } from "../../../Assets/Svg/lighting.svg";
-import { ReactComponent as Clock } from "../../../Assets/Svg/clock-dark.svg";
+import { ReactComponent as Lighting } from "../../../Assets/Courses/Path3603.svg";
+import { ReactComponent as Clock } from "../../../Assets/Courses/clock.svg";
 import { ReactComponent as Dollar } from "../../../Assets/Svg/dollar.svg";
 import { Link } from "react-router-dom";
 const CourseCard = (props) => {

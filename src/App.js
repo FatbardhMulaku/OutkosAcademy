@@ -1,10 +1,13 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch , Redirect} from "react-router-dom";
 import "./Styles/App.css";
+import { connect } from "react-redux";
 import Footer from "./Components/Shared/Footer/Footer";
 import Header from "./Components/Shared/Header/Header";
 import Default from "./Layouts/Default";
 import NonAuth from "./Layouts/NonAuth";
-function App() {
+import SingleItem from "./Pages/SingleBookItem";
+
+function App({ current }) {
   return (
     <div className="App">
       <Header/>
@@ -23,11 +26,24 @@ function App() {
         <Route exact path="/contact-us" component={Default} />
         <Route exact path="/success-stories" component={Default} />
         <Route exact path="/programs" component={Default} />
-
+        <Route exact path="/shop" component={Default} />
+        <Route exact path="/cart" component={Default} />
+        <Route exact path="/checkout" component={Default} />
+        {!current ? (
+            <Redirect to="/shop" />
+          ) : (
+            <Route exact path="/book/:id" component={SingleItem} />
+          )}
       </Switch>
       <Footer />
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    current: state.shop.currentItem,
+  };
+};
+
+export default connect(mapStateToProps)(App);

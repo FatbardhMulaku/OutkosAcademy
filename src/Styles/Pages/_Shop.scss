@@ -1,0 +1,60 @@
+.Shop{
+	padding: 150px 0;
+	display: flex;
+	justify-content: space-around;
+	@include respond(sm){
+		flex-direction: column;
+		justify-content: center;
+		padding: 150px 0;
+	}
+	&__filter{
+		width: 300px;
+		min-width: 250px;
+		@include respond(sm){
+			@include mx-auto(auto);
+		}
+	}
+	&__books{
+		max-width: 1000px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		&--item{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&>div:first-child{
+			display: flex;
+			justify-content: flex-end;
+			margin-bottom: 5px;
+			@include respond(sm){
+				margin-top: 40px;
+				justify-content: center;
+			}
+			a{
+				background-color: #eb824141;
+				color: #eb8341;
+				padding: 9px 25px;
+				font-weight: bold;
+				border-radius: 20px;
+				font-size: 16px;
+				cursor: pointer;
+				margin: auto 15px !important;
+				@include respond(xs){
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 20px;
+				}
+				/* @media only screen and (max-width: 443px) {
+					font-size: 13px;
+					padding: 3px 10px;
+				} */
+				&:hover {
+				color: white;
+				background-color: #eb8341;
+				}
+			}
+		}
+	}
+}

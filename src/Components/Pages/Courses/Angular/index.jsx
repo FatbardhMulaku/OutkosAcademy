@@ -15,17 +15,12 @@ const index = () => {
     <>
       <Hero
         BGimg="AngularBG C-blackHero"
-        title={Banner.title}
-        desc={Banner.desc}
-        btn={Banner.btn}
+        data={Banner}
       />
       <TeacherSkills
         img={whyimg}
         teacherImg={img}
-        skills={Teacher.skills}
-        name={Teacher.name}
-        job={Teacher.job}
-        title={Teacher.title}
+        data={Teacher}
       />
       <CoursesCard cards={Card} />
       <CoursesInfos infos={Info} />

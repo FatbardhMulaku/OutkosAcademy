@@ -57,35 +57,17 @@ const MyCourse = (props) => {
 
 			{props.data.map((item, index) => (
 				<CourseCard 
-				key={index+1}
-				link={item.item.link}
-				title={item.item.name}
-				list={item.item.list}
-				rating={item.item.rating}
-				NumberRating={item.item.NumberRating}
-				prices={item.item.prices}
-				img={item.item.img}
-			/>
+          key={index+1}
+          link={item.item.link}
+          title={item.item.name}
+          list={item.item.list}
+          rating={item.item.rating}
+          NumberRating={item.item.NumberRating}
+          prices={item.item.prices}
+          img={item.item.img}
+        />
 			))}
 			
-			{/* <CourseCard 
-				link={courses.ui_ux.link}
-				title={courses.ui_ux.name}
-				list={courses.ui_ux.list}
-				rating={4.6}
-				NumberRating={1487}
-				prices="$39.99"
-				img="img2"
-			/>
-			<CourseCard 
-				link={courses.wordpress.link}
-				title={courses.wordpress.name}
-				list={courses.wordpress.list}
-				rating={4.4}
-				NumberRating={746}
-				prices="$47.99"
-				img="img3"
-			/> */}
 	  </div>
     </div>
   );

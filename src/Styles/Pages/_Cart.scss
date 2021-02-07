@@ -1,0 +1,210 @@
+.Cart{
+	padding: 150px 0;
+	display: flex;
+	flex-direction: column;
+	@include respond(xs){
+		padding-top: 100px;
+	}
+	&__item{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__total{
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 40px;
+		@include respond(xs){
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+		&>div:first-child{
+			width: 500px;
+			div{
+				display: flex;
+				justify-content: space-between;
+				margin: 15px 0;
+				font-size: 20px;
+				@include respond(xs){
+					font-size: 16px;
+				}
+				p{
+					font-weight: 600;
+				}
+			}
+			hr{
+				opacity: 0.4;
+				color: #eb8341;
+			}
+			&>div:first-child{
+				p{
+					span{
+						color: #eb8341;
+						font-size: 18px;
+						margin-top: auto;
+						margin-bottom: auto;
+						margin-right: 15px;
+						font-weight: normal;
+					}
+				}
+			}
+			&>div:nth-child(4){
+				color: #eb8341;
+				font-weight: 600;
+				font-size: 22px;
+			}
+			&>div:nth-child(5){
+				display: flex;
+				justify-content: flex-end;
+				margin-top: 20px;
+			}
+			a{
+				right: 0px !important;
+				background-color: #eb8341;
+				color: #fff;
+				padding: 5px 15px;
+				font-weight: bold;
+				border-radius: 20px;
+				font-size: 14px;
+				border: 1px solid transparent;
+				cursor: pointer;
+				/* @media only screen and (max-width: 443px) {
+					font-size: 13px;
+					padding: 3px 10px;
+				} */
+				&:hover {
+				color: white;
+				background-color: #eb824194;
+				}
+			}
+		}
+	}
+}
+
+
+// ======== CartItems ==========
+.CartItems{
+	display: flex;
+	width: 520px;
+	justify-content: flex-start !important;
+	border: 2px solid #eb824177;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 8px;
+	@include respond(xs){
+		flex-direction: column;
+		padding: 20px 30px;
+		margin: 10px 15px;
+	}
+	&>div:first-child{
+		width: 160px;
+		height: 180px;
+		background-size: contain;
+		margin-right: 20px;
+		@include respond(xs){
+			@include mx-auto(auto);
+			width: 180px;
+			margin-bottom: 15px;
+		}
+	}
+	&>div:last-child{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		@include respond(xs){
+			flex-direction: column;
+		}
+		/* @media only screen and (max-width: 443px) {
+			flex-direction: column;
+		} */
+		&>div:first-child{
+			margin-right: 10px;
+			h1{
+				color: $color-primary;
+				font-weight: 600;
+				font-size: 24px;
+			}
+			h4{
+				color: $color-primary;
+				font-weight: 600;
+				font-size: 25px;
+				margin: 20px 0;
+				margin-bottom: 30px;
+				@include respond(xs){
+					margin: 5px 0;
+				}
+			}
+			input{
+				padding: 3px 10px;
+				margin-left: 0.4rem;
+				width: 60px;
+				border-radius: 15px;
+				border: 1px solid #eb82419f;
+				outline: none;
+			}
+		}
+		p{	
+			display: flex;
+			align-self: flex-end;
+			background-color: #eb824142;
+			color: #eb8341;
+			padding: 4px 15px;
+			font-weight: bold;
+			border-radius: 20px;
+			font-size: 14px;
+			border: 1px solid transparent;
+			height: 32px;
+			cursor: pointer;
+			@include respond(xs){
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+			}
+			/* @media only screen and (max-width: 443px) {
+				font-size: 13px;
+				padding: 3px 10px;
+			} */
+			&:hover {
+			  color: white;
+			  background-color: #eb8341;
+			}
+		}
+		
+	}
+	&img1,&img2,&img3,&img4,&img5,&img6,&img7,&img8{
+		width: 160px;
+		height: 180px;
+		background-size: contain;
+		margin-right: 20px;
+		@media only screen and (max-width: 430px) {
+			@include mx-auto(auto);
+			width: 180px;
+			margin-bottom: 15px;
+		}
+	}
+	&img1{
+		background-image: url("../../Assets/Shop/book1.jpg");
+	}
+	&img2{
+		background-image: url("../../Assets/Shop/book2.jpg");
+	}
+	&img3{
+		background-image: url("../../Assets/Shop/book3.jpg");
+	}
+	&img4{
+		background-image: url("../../Assets/Shop/book4.jpg");
+	}
+	&img5{
+		background-image: url("../../Assets/Shop/book5.jpg");
+	}
+	&img6{
+		background-image: url("../../Assets/Shop/book6.jpg");
+	}
+	&img7{
+		background-image: url("../../Assets/Shop/book7.jpg");
+	}
+	&img8{
+		background-image: url("../../Assets/Shop/book8.jpg");
+	}
+}

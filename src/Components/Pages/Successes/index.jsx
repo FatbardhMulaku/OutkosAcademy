@@ -1,6 +1,5 @@
 import React from "react";
-import HeroBanner from "../../Shared/Banner/HeroBanner";
-import Img from "../../../Assets/Certification/baners.jpg";
+import Hero from "../../Shared/Banner/Hero";
 import Features from "../Certification/Features";
 import WhyOutkos from "../About/SectionA2";
 import SuccessStories from "./SuccessStories";
@@ -10,21 +9,21 @@ import { Banner, FeaturesData, UseFeatures } from "./data";
 const index = () => {
   return (
     <>
-      <HeroBanner
-        img={Img}
+      <Hero
+        img="SuccessBG White-Hero"
         style={`md`}
-        title={Banner.title}
-        desc={Banner.desc}
-        btn={Banner.btn}
+        data={Banner}
       />
-	  <Features data={FeaturesData}/>
-	  <SuccessStories />
-	  <WhyOutkos />
-    <UseFeature
+      <div className="minus-top mb-16">
+        <Features data={FeaturesData} />
+      </div>
+      <SuccessStories />
+      <WhyOutkos />
+      <UseFeature
         title={UseFeatures.title}
         btn={UseFeatures.btn}
         img="Certification--img-1"
-        style="sm"
+        style={`md`}
       />
     </>
   );

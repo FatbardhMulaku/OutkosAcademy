@@ -14,9 +14,7 @@ const index = () => {
     <>
       <Hero
         BGimg="PhpBG C-BlackHero"
-        title={Banner.title}
-        desc={Banner.desc}
-        btn={Banner.btn}
+        data={Banner}
       />
       <CourseInfo 
         title={Info.title}
@@ -25,13 +23,9 @@ const index = () => {
       <GeneratePDF />
       <PhpSites />
       <TeacherSkill  
-        title={Skill.title}
-        desc={Skill.desc}
-        toLink={Skill.link}
-        skills={Skill.skills}
         img="TeacherSkill_Albrim BG"
-        name={Skill.name}
-        job={Skill.job}
+        data={Skill}
+        
       />
       <CoursesCard cards={Card} />
       <Syllabus Syllabus={SyllabusData}/>

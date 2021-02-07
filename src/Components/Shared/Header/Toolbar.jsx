@@ -6,6 +6,7 @@ import LoginNav from "./LoginNav";
 import Logo from "../Logo/Logo";
 import DrawerToggle from "./DrawerToggle";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import Icon from "./Icon";
 /* import "./Toolbar.css"; */
 
 const useStyles = makeStyles((theme) => ({
@@ -61,8 +62,7 @@ const Toolbar = (props) => {
         </div>
 
         <div className="searchIcon">
-          <div className="Heart__icon BG"></div>
-          <div className="Store__icon BG"></div>
+          <Icon />
 
           <div className="d-login">
             <LoginNav trigger={trigger} />
@@ -72,5 +72,6 @@ const Toolbar = (props) => {
     </AppBar>
   );
 };
+
 
 export default Toolbar;

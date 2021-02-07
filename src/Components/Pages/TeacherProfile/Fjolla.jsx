@@ -32,10 +32,7 @@ const Fjolla = () => {
       <TeacherSkills
         img={whyimg}
         teacherImg={img}
-        skills={data.skills}
-        name={data.name}
-        job={data.job}
-        title={data.title}
+        data={data}
       />
       <PreviousWork
         p1={project1}
