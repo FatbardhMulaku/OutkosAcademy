@@ -1,3 +1,5 @@
+import { FormattedMessage } from "react-intl";
+
 export const TeacherData = {
   albrim: {
     name: "Albrim Paqarizi",
@@ -6,12 +8,12 @@ export const TeacherData = {
     Following: "198",
     stats: {
       total: {
-        name: "Total Students",
+        name: <FormattedMessage id="TeacherProfile.stats.total" defaultMessage="Total Students"/>,
         value: "1 250 874",
         nextValue: "1 500 000",
       },
       rate: {
-        name: "Hourly Rate",
+        name: <FormattedMessage id="TeacherProfile.stats.rate" defaultMessage="Hourly Rate"/>,
         value: "$420.20",
         nextValue: "$500.00",
       },
@@ -86,19 +88,22 @@ export const TeacherData = {
     ],
     aboutInfo: [
       {
-        item: "I am an award winning Kosovo based Front End Developer.",
+        item: <FormattedMessage id="TeacherProfile.aboutInfo.albrim1" defaultMessage="I am an award winning Kosovo based Front End Developer."/>,
       },
       {
         item:
-          "I look forward to teach enthusiast students, who would love to turn work into reality...",
+        <FormattedMessage id="TeacherProfile.aboutInfo.albrim2" defaultMessage="I look forward to teach enthusiast students, who would love to turn work into reality..."/>
+          ,
       },
       {
         item:
-          "My work is shown in a lot of places and huge companies which have very large audiences who are perfectly satisfied by my work.",
+        <FormattedMessage id="TeacherProfile.aboutInfo.albrim3" defaultMessage="My work is shown in a lot of places and huge companies which have very large audiences who are perfectly satisfied by my work."/>
+          ,
       },
       {
         item:
-          "Come Join My Courses and learn new and useful skills that no one else can teach you...",
+        <FormattedMessage id="TeacherProfile.aboutInfo.albrim4" defaultMessage="Come Join My Courses and learn new and useful skills that no one else can teach you..."/>
+          ,
       },
     ],
   },
@@ -106,8 +111,9 @@ export const TeacherData = {
     name: "Arbër Maksuti",
     job: "FrontEnd Developer",
     desc:
-      "He is a Frontend Developer with 6 years of experience and a lot of huge projects with International Companies...",
-    title: "Why Him?",
+    <FormattedMessage id="TeacherProfile.arber.desc" defaultMessage="He is a Frontend Developer with 6 years of experience and a lot of huge projects with International Companies..."/>
+      ,
+    title: <FormattedMessage id="TeacherProfile.WhyHim" defaultMessage="Why Him?"/>,
     skills: [
       {
         skill: "Structuring",
@@ -127,8 +133,9 @@ export const TeacherData = {
     name: "Albion Metolli",
     job: "UI/UX Designer",
     desc:
-      "He is a Creative UI/UX Designer with amazing knowledge on what people like to see...",
-    title: "Why Him?",
+    <FormattedMessage id="TeacherProfile.albion.desc" defaultMessage="He is a Creative UI/UX Designer with amazing knowledge on what people like to see..."/>
+      ,
+    title: <FormattedMessage id="TeacherProfile.WhyHim" defaultMessage="Why Him?"/>,
     skills: [
       {
         skill: "Interface",
@@ -148,8 +155,9 @@ export const TeacherData = {
     name: "Fjolla Sinanaj",
     job: "UI/UX Designer",
     desc:
-      "She is a Creative UI/UX Designer with amazing knowledge on what people like to see...",
-    title: "Why Her?",
+    <FormattedMessage id="TeacherProfile.fjolla.desc" defaultMessage="She is a Creative UI/UX Designer with amazing knowledge on what people like to see..."/>
+      ,
+    title: <FormattedMessage id="TeacherProfile.WhyHer" defaultMessage="Why Her?"/>,
     skills: [
       {
         skill: "Interface",
@@ -172,12 +180,12 @@ export const TeacherData = {
     Following: "26",
     stats: {
       total: {
-        name: "Total Students",
+        name: <FormattedMessage id="TeacherProfile.stats.total" defaultMessage="Total Students"/>,
         value: "245 975",
         nextValue: "300 000",
       },
       rate: {
-        name: "Hourly Rate",
+        name: <FormattedMessage id="TeacherProfile.stats.rate" defaultMessage="Hourly Rate"/>,
         value: "$24.80",
         nextValue: "$30.00",
       },
@@ -252,19 +260,22 @@ export const TeacherData = {
     ],
     aboutInfo: [
       {
-        item: "I am an award winning Kosovo based Visual Designer.",
+        item: <FormattedMessage id="TeacherProfile.aboutInfo.bleart1" defaultMessage="I am an award winning Kosovo based Visual Designer."/>,
       },
       {
         item:
-          "I look forward to teach enthusiast students, who would love to design their Brand of their own...",
+        <FormattedMessage id="TeacherProfile.aboutInfo.bleart2" defaultMessage="I look forward to teach enthusiast students, who would love to design their Brand of their own..."/>
+          ,
       },
       {
         item:
-          "My work has graced many international brand collaborations and has been reaching people since then. I specialize in Web Design and Business Branding, including Social Media Managment.",
+        <FormattedMessage id="TeacherProfile.aboutInfo.bleart3" defaultMessage="My work has graced many international brand collaborations and has been reaching people since then. I specialize in Web Design and Business Branding, including Social Media Managment."/>
+          ,
       },
       {
         item:
-          "Come Join My Courses and learn new and useful skills that no one else can teach you...",
+        <FormattedMessage id="TeacherProfile.aboutInfo.bleart4" defaultMessage="Come Join My Courses and learn new and useful skills that no one else can teach you..."/>
+          ,
       },
     ],
   },
@@ -275,17 +286,17 @@ export const TeacherData = {
     Following: "68",
     stats: {
       total: {
-        name: "Total Students",
+        name: <FormattedMessage id="TeacherProfile.stats.total" defaultMessage="Total Students"/>,
         value: "750 874",
         nextValue: "1 000 000",
       },
       rate: {
-        name: "Hourly Rate",
+        name: <FormattedMessage id="TeacherProfile.stats.rate" defaultMessage="Hourly Rate"/>,
         value: "$175.20",
         nextValue: "$200.00",
       },
     },
-    web: "fatbardhm.com",
+    web: "fatbardh-m.com",
     courses: [
       {
         item: {
@@ -355,19 +366,22 @@ export const TeacherData = {
     ],
     aboutInfo: [
       {
-        item: "I am an award winning Kosovo based Programmer. ",
+        item: <FormattedMessage id="TeacherProfile.aboutInfo.fatbardh1" defaultMessage="I am an award winning Kosovo based Programmer. "/>,
       },
       {
         item:
-          "I look forward to teach enthusiast students, who would love to turn work into reality...",
+        <FormattedMessage id="TeacherProfile.aboutInfo.fatbardh2" defaultMessage="I look forward to teach enthusiast students, who would love to turn work into reality..."/>
+          ,
       },
       {
         item:
-          "My work is shown in a lot of places and huge companies which have very large audiences who are perfectly satisfied by my work. ",
+        <FormattedMessage id="TeacherProfile.aboutInfo.fatbardh3" defaultMessage="My work is shown in a lot of places and huge companies which have very large audiences who are perfectly satisfied by my work. "/>
+          ,
       },
       {
         item:
-          "Come Join My Courses and learn new and useful skills that no one else can teach you...",
+        <FormattedMessage id="TeacherProfile.aboutInfo.fatbardh4" defaultMessage="Come Join My Courses and learn new and useful skills that no one else can teach you..."/>
+          ,
       },
     ],
   },
@@ -378,12 +392,12 @@ export const TeacherData = {
     Following: "26",
     stats: {
       total: {
-        name: "Total Students",
+        name: <FormattedMessage id="TeacherProfile.stats.total" defaultMessage="Total Students"/>,
         value: "340 874",
         nextValue: "500 000",
       },
       rate: {
-        name: "Hourly Rate",
+        name: <FormattedMessage id="TeacherProfile.stats.rate" defaultMessage="Hourly Rate"/>,
         value: "$45.20",
         nextValue: "$50.00",
       },
@@ -458,19 +472,22 @@ export const TeacherData = {
     ],
     aboutInfo: [
       {
-        item: "I am an award winning Kosovo based Programmer. ",
+        item: <FormattedMessage id="TeacherProfile.aboutInfo.rrezon1" defaultMessage="I am an award winning Kosovo based Programmer. "/>,
       },
       {
         item:
-          "I look forward to teach enthusiast students, who would love to turn work into reality...",
+        <FormattedMessage id="TeacherProfile.aboutInfo.rrezon2" defaultMessage="I look forward to teach enthusiast students, who would love to turn work into reality..."/>
+          ,
       },
       {
         item:
-          "My work is shown in a lot of places and huge companies which have very large audiences who are perfectly satisfied by my work. ",
+        <FormattedMessage id="TeacherProfile.aboutInfo.rrezon3" defaultMessage="My work is shown in a lot of places and huge companies which have very large audiences who are perfectly satisfied by my work. "/>
+          ,
       },
       {
         item:
-          "Come Join My Courses and learn new and useful skills that no one else can teach you...",
+        <FormattedMessage id="TeacherProfile.aboutInfo.rrezon4" defaultMessage="Come Join My Courses and learn new and useful skills that no one else can teach you..."/>
+          ,
       },
     ],
   },

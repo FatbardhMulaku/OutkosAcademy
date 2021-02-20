@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { ReactComponent as Desc } from "../../../Assets/Svg/descending-sort.svg";
 import Select from "../../Shared/Form/Select";
 import CourseCard from "./CourseCard";
-import {TeacherData} from "../../Pages/TeacherProfile/data";
+import { FormattedMessage } from "react-intl";
 
-const courses = TeacherData.bleart.courses;
 
 const MyCourse = (props) => {
   const [state, setState] = useState({
@@ -33,9 +32,9 @@ const MyCourse = (props) => {
     <div className="MyCourse">
       <div className="MyCourse__head">
         <div>
-          <h1>My Courses</h1>{" "}
+          <h1><FormattedMessage id="TeacherProfile.MyCourse.1" defaultMessage="My Courses"/></h1>
           <a href="/courses">
-            View All <div />
+          <FormattedMessage id="TeacherProfile.MyCourse.2" defaultMessage="View All"/> <div />
           </a>
         </div>
 

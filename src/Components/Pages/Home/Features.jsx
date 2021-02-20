@@ -4,13 +4,15 @@ import img1 from "../../../Assets/Home/real-world-insights.png";
 /* import img2 from "../../../Assets/Home/practical-skills.png";
 import img3 from "../../../Assets/Home/unique-learning.png"; */
 import Feature from "../../Shared/Features/Features";
+import { FormattedMessage } from "react-intl";
+
 const data = [
   {
-    title: "Real-world insights",
-    title2: "Build Up Your Consulting or Corporate Skills.",
-    paragraph: "Say goodbye to generic instructions. Start learning practical skills that earn you raises and advance your career.",
+    title: <FormattedMessage id="home.FeatureData.title1" defaultMessage="Real-world insights"/>,
+    title2: <FormattedMessage id="home.FeatureData.title21" defaultMessage="Build Up Your Consulting or Corporate Skills."/>,
+    paragraph: <FormattedMessage id="home.FeatureData.paragraph1" defaultMessage="Say goodbye to generic instructions. Start learning practical skills that earn you raises and advance your career."/>,
     to: "/",
-    link: "Read More",
+    link: <FormattedMessage id="home.FeatureData.link1" defaultMessage="Read More"/>,
     img: img1,
   },
  /*  {

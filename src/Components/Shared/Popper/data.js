@@ -1,39 +1,41 @@
+import { FormattedMessage } from "react-intl";
+
 export const Career = [
     {
       link: "Programs",
-      name: "Programs"
+      name: <FormattedMessage id="header.subMenu.1" defaultMessage="Programs"/>
     },
     {
       link: "Online",
-      name: "Online"
+      name: <FormattedMessage id="header.subMenu.2" defaultMessage="Online"/>
     },
     {
       link: "success-stories",
-      name: "Successes"
+      name: <FormattedMessage id="header.subMenu.3" defaultMessage="Successes"/>
 	},
 	{
 	  link: "application",
-	  name: "Application"
+	  name: <FormattedMessage id="header.subMenu.4" defaultMessage="Application"/>
 	},
 	{
 		link: "professional",
-		name: "Professional"
+		name: <FormattedMessage id="header.subMenu.5" defaultMessage="Professional"/>
 	  },
 	  {
 		link: "certifications",
-		name: "Certification"
+		name: <FormattedMessage id="header.subMenu.6" defaultMessage="Certification"/>
 	  },
 	  {
 		link: "Scholarship",
-		name: "Scholarship"
+		name: <FormattedMessage id="header.subMenu.7" defaultMessage="Scholarship"/>
 	  },
 	  {
 		link: "job-opportunities",
-		name: "Job Postitions"
+		name: <FormattedMessage id="header.subMenu.8" defaultMessage="Job Postitions"/>
 	  },
 	  {
 		link: "Reliability",
-		name: "Reliability"
+		name: <FormattedMessage id="header.subMenu.9" defaultMessage="Reliability"/>
 	  },
 
   ];

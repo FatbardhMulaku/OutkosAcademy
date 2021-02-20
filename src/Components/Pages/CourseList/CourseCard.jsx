@@ -5,6 +5,7 @@ import { ReactComponent as Lighting } from "../../../Assets/Courses/Path3603.svg
 import { ReactComponent as Clock } from "../../../Assets/Courses/clock.svg";
 import { ReactComponent as Dollar } from "../../../Assets/Svg/dollar.svg";
 import { Link } from "react-router-dom";
+
 const CourseCard = (props) => {
   return (
     <div className="course-card">

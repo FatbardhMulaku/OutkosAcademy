@@ -1,20 +1,20 @@
-
+import { FormattedMessage } from "react-intl";
 export const mainMenu = [
     {
       link: "courses",
-      name: "Courses"
+      name: <FormattedMessage id="header.mainmenu.1" defaultMessage="Courses"/>
     },
     {
       link: "teachers",
-      name: "Teachers"
+      name: <FormattedMessage id="header.mainmenu.2" defaultMessage="Teachers"/>
     },
     {
       link: "shop",
-      name: "Shop"
+      name: <FormattedMessage id="header.mainmenu.3" defaultMessage="Shop"/>
 	},
 	{
 		link: "about-us",
-		name: "About Us"
+		name: <FormattedMessage id="header.mainmenu.4" defaultMessage="About Us"/>
 	},
 
   ];

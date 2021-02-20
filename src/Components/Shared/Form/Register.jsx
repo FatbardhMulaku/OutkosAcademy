@@ -7,6 +7,8 @@ import { ReactComponent as User } from "../../../Assets/Svg/user.svg";
 import { ReactComponent as Mail } from "../../../Assets/Svg/mail.svg";
 import { ReactComponent as Lock } from "../../../Assets/Svg/lock.svg";
 import Input from "./Input";
+import { FormattedMessage } from "react-intl";
+
 const Register = () => {
   const [input, setInput] = useState({
     name: "",
@@ -19,10 +21,15 @@ const Register = () => {
     event.persist();
     setInput({ ...input, [event.target.name]: event.target.value });
   };
-  
+
   return (
     <div className="register-form">
-      <h2 className="sub-title">Register</h2>
+      <h2 className="sub-title">
+        <FormattedMessage
+          id="register.form.title.1"
+          defaultMessage="Register"
+        />
+      </h2>
       <div className="sign-up__social-icons flex">
         <Google className="google-icon" />
         <Facebook className="facebook-icon" />
@@ -30,7 +37,12 @@ const Register = () => {
       </div>
       <div className="or-option">
         <div className="line"></div>
-        <p className="paragraph-2">or use your email</p>
+        <p className="paragraph-2">
+          <FormattedMessage
+            id="register.form.subtitle.1"
+            defaultMessage="or use your email"
+          />
+        </p>
         <div className="line"></div>
       </div>
 
@@ -39,7 +51,7 @@ const Register = () => {
           type="text"
           label="Full Name"
           value={input.name}
-          icon={<User className="stroke-style"/>}
+          icon={<User className="stroke-style" />}
           name="name"
           id="name"
           onChange={(e) => handleChange(input, setInput, e)}
@@ -48,7 +60,7 @@ const Register = () => {
           type="email"
           label="Email Address"
           value={input.email}
-          icon={<Mail className="fill-style"/>}
+          icon={<Mail className="fill-style" />}
           name="email"
           id="email"
           onChange={(e) => handleChange(input, setInput, e)}
@@ -57,7 +69,7 @@ const Register = () => {
           type="password"
           label="Password"
           value={input.password}
-          icon={<Lock className="stroke-style"/>}
+          icon={<Lock className="stroke-style" />}
           name="password"
           id="password"
           onChange={(e) => handleChange(input, setInput, e)}
@@ -66,13 +78,16 @@ const Register = () => {
           type="password"
           label="Confirm Password"
           value={input.confirm_password}
-          icon={<Lock className="stroke-style"/>}
+          icon={<Lock className="stroke-style" />}
           name="confirm_password"
           id="confirm_password"
           onChange={(e) => handleChange(input, setInput, e)}
         />
         <button className="styled-link sm bg-primary" type="submit">
-          Create Account
+          <FormattedMessage
+            id="register.form.btn.1"
+            defaultMessage="Create Account"
+          />
         </button>
       </form>
     </div>

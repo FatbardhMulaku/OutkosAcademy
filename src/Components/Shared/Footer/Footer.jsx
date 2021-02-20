@@ -6,108 +6,111 @@ import { ReactComponent as Facebook } from "../../../Assets/Svg/facebook.svg";
 import { ReactComponent as Instagram } from "../../../Assets/Svg/instagram.svg";
 import { ReactComponent as Linkedin } from "../../../Assets/Svg/linkedin.svg";
 import { ReactComponent as Twitter } from "../../../Assets/Svg/twitter.svg";
+import { FormattedMessage } from "react-intl";
+import LangOptions from "../../Shared/LangOptions";
+
 const links = [
   {
-    category: "Career",
+    category: <FormattedMessage id="footer.Career" defaultMessage="Career" />,
     links: [
       {
-        link: "Success Stories",
+        link: <FormattedMessage id="footer.Career.1" defaultMessage="Success Stories" />,
         to: "/success-stories",
       },
       {
-        link: "Job Opportunities",
+        link: <FormattedMessage id="footer.Career.2" defaultMessage="Job Opportunities" />,
         to: "/job-opportunities",
       },
       {
-        link: "Open Positions",
+        link: <FormattedMessage id="footer.Career.3" defaultMessage="Open Positions" /> ,
         to: "/open-positions",
       },
       {
-        link: "Send a Message",
+        link: <FormattedMessage id="footer.Career.4" defaultMessage="Send a Message"/>,
         to: "/contact-us",
       },
     ],
   },
   {
-    category: "Studies",
+    category: <FormattedMessage id="footer.Studies" defaultMessage="Studies"/> ,
     links: [
       {
-        link: "Programs",
+        link: <FormattedMessage id="footer.Studies.1" defaultMessage="Programs"/>,
         to: "/programs",
       },
       {
-        link: "Application",
+        link: <FormattedMessage id="footer.Studies.2" defaultMessage="Application"/>,
         to: "/application",
       },
       {
-        link: "Scholarships",
+        link: <FormattedMessage id="footer.Studies.3" defaultMessage="Scholarships"/>,
         to: "/scholarships",
       },
       {
-        link: "Online",
+        link: <FormattedMessage id="footer.Studies.4" defaultMessage="Online"/>,
         to: "/online",
       },
     ],
   },
   {
-    category: "Trainings",
+    category: <FormattedMessage id="footer.Trainings" defaultMessage="Trainings"/>,
     links: [
       {
-        link: "Professional",
+        link: <FormattedMessage id="footer.Trainings.1" defaultMessage="Professional"/>,
         to: "/professional",
       },
       {
-        link: "Testing Center",
+        link: <FormattedMessage id="footer.Trainings.2" defaultMessage="Testing Center"/>,
         to: "/testing-center",
       },
       {
-        link: "Certifications",
+        link: <FormattedMessage id="footer.Trainings.3" defaultMessage="Certifications"/>,
         to: "/certifications",
       },
       {
-        link: "Rent a Class",
+        link: <FormattedMessage id="footer.Trainings.4" defaultMessage="Rent a Class"/>,
         to: "/rent-class",
       },
     ],
   },
   {
-    category: "Projects",
+    category: <FormattedMessage id="footer.Projects" defaultMessage="Projects"/>,
     links: [
       {
-        link: "Reliability",
+        link: <FormattedMessage id="footer.Projects.1" defaultMessage="Reliability"/>,
         to: "/reliability",
       },
       {
-        link: "Training Providers",
+        link: <FormattedMessage id="footer.Projects.2" defaultMessage="Training Providers"/>,
         to: "/training-providers",
       },
       {
-        link: "Women on ICT",
+        link: <FormattedMessage id="footer.Projects.3" defaultMessage="Women on ICT"/>,
         to: "/women-ict",
       },
       {
-        link: "Other",
+        link: <FormattedMessage id="footer.Projects.4" defaultMessage="Other"/>,
         to: "/other",
       },
     ],
   },
   {
-    category: "About Us",
+    category: <FormattedMessage id="footer.AboutUs" defaultMessage="About Us"/>,
     links: [
       {
-        link: "Contact",
+        link: <FormattedMessage id="footer.AboutUs.1" defaultMessage="Contact"/>,
         to: "/contact-us",
       },
       {
-        link: "Locations",
+        link: <FormattedMessage id="footer.AboutUs.2" defaultMessage="Locations"/>,
         to: "/locations",
       },
       {
-        link: "Terms and Conditions",
+        link: <FormattedMessage id="footer.AboutUs.3" defaultMessage="Terms and Conditions"/>,
         to: "/terms",
       },
       {
-        link: "Privacy Policy",
+        link: <FormattedMessage id="footer.AboutUs.4" defaultMessage="Privacy Policy"/>,
         to: "/privacy-policy",
       },
     ],
@@ -119,7 +122,12 @@ const Footer = () => {
       <div className="main-container">
         <div className="top">
           <Logo footer />
-          <p className="description">Outkos Academy is here to help and change the future of learning with our various modern solutions.</p>
+          <p className="description">
+            <FormattedMessage
+              id="footer.info"
+              defaultMessage="Outkos Academy is here to help and change the future of learning with our various modern solutions."
+            />
+          </p>
         </div>
         <div className="divider"></div>
         <div className="middle">
@@ -132,22 +140,47 @@ const Footer = () => {
         <div className="divider"></div>
         <div className="bottom">
           <div className="social-media-links">
-            <a href="http://facebook.com" target="_blank" className="social-media-link" rel="noopener noreferrer">
+            <a
+              href="http://facebook.com"
+              target="_blank"
+              className="social-media-link"
+              rel="noopener noreferrer"
+            >
               <Facebook />
             </a>
-            <a href="http://facebook.com" target="_blank" className="social-media-link" rel="noopener noreferrer">
+            <a
+              href="http://facebook.com"
+              target="_blank"
+              className="social-media-link"
+              rel="noopener noreferrer"
+            >
               <Instagram />
             </a>
-            <a href="http://facebook.com" target="_blank" className="social-media-link" rel="noopener noreferrer">
+            <a
+              href="http://facebook.com"
+              target="_blank"
+              className="social-media-link"
+              rel="noopener noreferrer"
+            >
               <Linkedin />
             </a>
-            <a href="http://facebook.com" target="_blank" className="social-media-link" rel="noopener noreferrer">
+            <a
+              href="http://facebook.com"
+              target="_blank"
+              className="social-media-link"
+              rel="noopener noreferrer"
+            >
               <Twitter />
             </a>
           </div>
-          <div className="copyright">Copyright 2020.All rights reserved</div>
+          <div className="copyright">
+            <FormattedMessage
+              id="footer.Copyright"
+              defaultMessage="Copyright 2020.All rights reserved"
+            />
+          </div>
           <div className="language-switch">
-            <button>English</button>
+            <LangOptions />
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import { makeStyles } from "@material-ui/core/styles";
+import { FormattedMessage } from "react-intl";
 
 const useStyles = makeStyles((theme) => ({
 /*   root:{
@@ -100,7 +101,7 @@ const LoginNav = (props) => {
                   history.push("/login");
                 }}
               >
-                Login
+                <FormattedMessage id="header.loginNaw.1" defaultMessage="Login"/>
               </p>
             )}
           />
@@ -114,7 +115,7 @@ const LoginNav = (props) => {
                   history.push("/signup");
                 }}
               >
-                Register
+                <FormattedMessage id="header.loginNaw.2" defaultMessage="Register"/>
               </p>
             )}
           />

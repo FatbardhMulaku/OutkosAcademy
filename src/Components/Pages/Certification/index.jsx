@@ -8,7 +8,7 @@ import { Banner, FeaturesData, UseFeatures } from "./data";
 const index = () => {
   return (
     <>
-      <Hero img="CertificationBG Black-Hero" style={"md"} data={Banner} />
+      <Hero key={Array.of(2)} img="CertificationBG Black-Hero" style={"md"} data={Banner} />
       <div className="minus-top mb-16">
         <Features data={FeaturesData} />
       </div>
