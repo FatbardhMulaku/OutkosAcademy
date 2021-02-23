@@ -8,6 +8,7 @@ import { ReactComponent as Linkedin } from "../../../Assets/Svg/linkedin.svg";
 import { ReactComponent as Twitter } from "../../../Assets/Svg/twitter.svg";
 import { FormattedMessage } from "react-intl";
 import LangOptions from "../../Shared/LangOptions";
+import Fade from 'react-reveal/Fade';
 
 const links = [
   {
@@ -120,6 +121,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="main-container">
+       <Fade right>
         <div className="top">
           <Logo footer />
           <p className="description">
@@ -129,6 +131,7 @@ const Footer = () => {
             />
           </p>
         </div>
+        </Fade>
         <div className="divider"></div>
         <div className="middle">
           <div className="links-area">
@@ -196,7 +199,9 @@ const FooterLinksCategory = (props) => {
         {props.links.map((l, i) => {
           return (
             <Link className="footer-link" to={l.to} key={i}>
-              {l.link}
+              <Fade bottom big>
+                {l.link}
+              </Fade>
             </Link>
           );
         })}

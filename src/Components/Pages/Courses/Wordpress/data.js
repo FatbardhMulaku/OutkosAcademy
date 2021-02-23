@@ -56,6 +56,11 @@ export const Info = [
   }
 ];
 
+export const Infos = {
+  title:"Don't want to learn Coding? We got you",
+  desc:"Wordpress is one of the best CMS for creating Websites without knowing how to code. You can learn to create very complex websites and customize them for all your needs..."
+}
+
 export const SyllabusData = [
   {
     title:"Overview",

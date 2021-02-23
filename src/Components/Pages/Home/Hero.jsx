@@ -3,6 +3,7 @@ import Banneri from "./Banner";
 import { Banner } from "./data";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import Fade from 'react-reveal/Fade';
 
 const Hero = () => {
   const properties = {
@@ -79,14 +80,16 @@ const Hero = () => {
   return (
     <div className="HomeHero newHero HomeBG White-Hero">
       <div className="container">
+      <Fade top big>
         <div className="HomeHero__line">
           {Banner.lists.map((item, index) => (
-            <div>
+            <div key={index}>
               <div className={`HomeHero__icon${index + 1} BG`}></div>
               <p>{item.list}</p>
             </div>
           ))}
         </div>
+        </Fade>
         <Slide {...properties} easing="ease">
           <div key={1}>
             <Banneri data={Banner} style={`md`} />

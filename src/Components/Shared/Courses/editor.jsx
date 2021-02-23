@@ -11,9 +11,9 @@ function editor() {
         width="100%"
         src="https://stackblitz.com/edit/react-jecbka?embed=1&file=src/App.js&hideExplorer=1&hideNavigation=1"
         scrolling="no"
-        frameborder="no"
+        frameBorder="no"
         allowtransparency="true"
-        allowfullscreen="true"
+        allowFullScreen={true}
         sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"
       ></iframe>
     </div>

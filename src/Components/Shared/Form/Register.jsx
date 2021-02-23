@@ -8,6 +8,8 @@ import { ReactComponent as Mail } from "../../../Assets/Svg/mail.svg";
 import { ReactComponent as Lock } from "../../../Assets/Svg/lock.svg";
 import Input from "./Input";
 import { FormattedMessage } from "react-intl";
+import Fade from "react-reveal/Fade";
+import Zoom from 'react-reveal/Zoom';
 
 const Register = () => {
   const [input, setInput] = useState({
@@ -24,17 +26,21 @@ const Register = () => {
 
   return (
     <div className="register-form">
-      <h2 className="sub-title">
-        <FormattedMessage
-          id="register.form.title.1"
-          defaultMessage="Register"
-        />
-      </h2>
-      <div className="sign-up__social-icons flex">
-        <Google className="google-icon" />
-        <Facebook className="facebook-icon" />
-        <Linkedin className="linkedin-icon" />
-      </div>
+      <Fade top big>
+        <h2 className="sub-title">
+          <FormattedMessage
+            id="register.form.title.1"
+            defaultMessage="Register"
+          />
+        </h2>
+      </Fade>
+      <Fade top big cascade>
+        <div className="sign-up__social-icons flex">
+          <Google className="google-icon" />
+          <Facebook className="facebook-icon" />
+          <Linkedin className="linkedin-icon" />
+        </div>
+      </Fade>
       <div className="or-option">
         <div className="line"></div>
         <p className="paragraph-2">
@@ -45,7 +51,7 @@ const Register = () => {
         </p>
         <div className="line"></div>
       </div>
-
+      <Zoom> 
       <form>
         <Input
           type="text"
@@ -83,13 +89,16 @@ const Register = () => {
           id="confirm_password"
           onChange={(e) => handleChange(input, setInput, e)}
         />
+        <Fade bottom big>
         <button className="styled-link sm bg-primary" type="submit">
           <FormattedMessage
             id="register.form.btn.1"
             defaultMessage="Create Account"
           />
         </button>
+        </Fade>
       </form>
+     </Zoom>
     </div>
   );
 };

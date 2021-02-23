@@ -6,6 +6,7 @@ import "../../../Assets/Home/City.png";
 import img1 from "../../../Assets/web-programming.png";
 import img2 from "../../../Assets/networking.png";
 import { FormattedMessage } from "react-intl";
+import Zoom from 'react-reveal/Zoom';
 
 const data = {
   left: {
@@ -76,6 +77,7 @@ const data = {
 const WhatWeOffer = () => {
   return (
     <div className="home__what-we-offer">
+      <Zoom>
       <div className="main-container">
         <div className="title-group">
           <div className="line"></div>
@@ -96,6 +98,7 @@ const WhatWeOffer = () => {
           </Slider>
         </div>
       </div>
+      </Zoom>
     </div>
   );
 };

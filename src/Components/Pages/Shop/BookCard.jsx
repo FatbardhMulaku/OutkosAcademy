@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { addToCart, loadCurrentItem } from "../../../store/actions/books";
+import Zoom from 'react-reveal/Zoom';
 
 const BookCard = ({bookData, addToCart, loadCurrentItem}) => {
   return (
-    
+    <Zoom>
       <div className="BookCard">
         <Link to={`/book/${bookData.id}`} onClick={() => loadCurrentItem(bookData)}>
         <div className={`BookCard${bookData.img} BG`} />
@@ -21,7 +22,7 @@ const BookCard = ({bookData, addToCart, loadCurrentItem}) => {
            <button onClick={() => addToCart(bookData.id)}>  Add to Cart </button>
         </div>
       </div>
-   
+    </Zoom>
   );
 };
 const mapDispatchToProps = (dispatch) => {

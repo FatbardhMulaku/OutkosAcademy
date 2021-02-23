@@ -1,6 +1,8 @@
 import React from "react";
 import ListItem from "../ListItem/ListItem";
 import "./SliderElement.scss";
+import Bounce from 'react-reveal/Bounce';
+
 const SliderElement = (props) => {
   return (
     <div className="slider-element">
@@ -20,7 +22,9 @@ const SliderSideData = (props) => {
     <div className="slider-side-data">
       <div className="top">
         <div className="img" style={{ backgroundImage: `url(${props.img})` }}></div>
-        <div className="sub-title">{props.title}</div>
+        <Bounce top >
+          <div className="sub-title">{props.title}</div>
+        </Bounce>
       </div>
       <div className="middle">
         <div className="paragraph-1">{props.paragraph}</div>

@@ -1,17 +1,25 @@
 import React from "react";
 import StyledLink from "../StyledLink/StyledLink";
+import Fade from "react-reveal/Fade";
+import Zoom from 'react-reveal/Zoom';
 
-const Hero = ({data ,img, style}) => {
+const Hero = ({ data, img, style }) => {
   return (
     <div className={`newHero ${img}`}>
       <div className="container">
-        <h1>{data.title}</h1>
-        <p>{data.title}</p>
+        <h1>
+          <Fade top big>
+            {data.title}
+          </Fade>
+        </h1>
+        <Zoom><p>{data.title}</p></Zoom>
         <div>
-		<StyledLink to="/" styles={`${style} bg-primary`}>
-          {data.btn}
-        </StyledLink>
-		</div>
+          <Fade bottom big>
+            <StyledLink to="/" styles={`${style} bg-primary`}>
+              {data.btn}
+            </StyledLink>
+          </Fade>
+        </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path

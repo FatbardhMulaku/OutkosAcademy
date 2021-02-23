@@ -1,12 +1,12 @@
 import React from "react";
 import Divider from "../Divider";
+import Fade from 'react-reveal/Fade';
 
 const Syllabus = (props) => {
   return (
     <div className="Syllabus container">
       <Divider width="20%" />
-      <h4>Syllabus</h4>
-
+      <Fade top big><h4>Syllabus</h4></Fade>
       <div className="Syllabus--slider">
         <div className="Syllabus--slider__2">28%</div>
       </div>

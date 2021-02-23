@@ -6,6 +6,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FormattedMessage } from "react-intl";
+import Zoom from "react-reveal/Zoom";
+import Fade from 'react-reveal/Fade';
 
 export class Courses extends Component {
   render() {
@@ -53,19 +55,23 @@ export class Courses extends Component {
     return (
       <div className="HomeCourses container">
         <Divider width="12%" />
+        <Fade top big>
         <h1>
           <FormattedMessage
             id="home.WhatWeOffer.Course.12"
             defaultMessage="Recommended Courses"
           />
         </h1>
-        <div className="HomeCourses-area">
-          <Slider {...settings}>
-            {courses.map((c, i) => {
-              return <CourseCard {...c} key={i} />;
-            })}
-          </Slider>
-        </div>
+        </Fade>
+        <Zoom>
+          <div className="HomeCourses-area">
+            <Slider {...settings}>
+              {courses.map((c, i) => {
+                return <CourseCard {...c} key={i} />;
+              })}
+            </Slider>
+          </div>
+        </Zoom>
       </div>
     );
   }

@@ -3,7 +3,7 @@ import { ReactComponent as Desc } from "../../../Assets/Svg/descending-sort.svg"
 import Select from "../../Shared/Form/Select";
 import CourseCard from "./CourseCard";
 import { FormattedMessage } from "react-intl";
-
+import Fade from "react-reveal/Fade";
 
 const MyCourse = (props) => {
   const [state, setState] = useState({
@@ -29,12 +29,22 @@ const MyCourse = (props) => {
     },
   ];
   return (
+    <Fade bottom big cascade>
     <div className="MyCourse">
       <div className="MyCourse__head">
         <div>
-          <h1><FormattedMessage id="TeacherProfile.MyCourse.1" defaultMessage="My Courses"/></h1>
+          <h1>
+            <FormattedMessage
+              id="TeacherProfile.MyCourse.1"
+              defaultMessage="My Courses"
+            />
+          </h1>
           <a href="/courses">
-          <FormattedMessage id="TeacherProfile.MyCourse.2" defaultMessage="View All"/> <div />
+            <FormattedMessage
+              id="TeacherProfile.MyCourse.2"
+              defaultMessage="View All"
+            />{" "}
+            <div />
           </a>
         </div>
 
@@ -52,23 +62,24 @@ const MyCourse = (props) => {
           </Select>
         </div>
       </div>
-	  <div className="MyCourse__body">
-
-			{props.data.map((item, index) => (
-				<CourseCard 
-          key={index+1}
-          link={item.item.link}
-          title={item.item.name}
-          list={item.item.list}
-          rating={item.item.rating}
-          NumberRating={item.item.NumberRating}
-          prices={item.item.prices}
-          img={item.item.img}
-        />
-			))}
-			
-	  </div>
+      
+        <div className="MyCourse__body">
+          {props.data.map((item, index) => (
+            <CourseCard
+              key={index + 1}
+              link={item.item.link}
+              title={item.item.name}
+              list={item.item.list}
+              rating={item.item.rating}
+              NumberRating={item.item.NumberRating}
+              prices={item.item.prices}
+              img={item.item.img}
+            />
+          ))}
+        </div>
+      
     </div>
+    </Fade>
   );
 };
 

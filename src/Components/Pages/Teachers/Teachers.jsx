@@ -8,6 +8,7 @@ import bleart from "../../../Assets/Teachers/bleart.jpg";
 import rrezon from "../../../Assets/Teachers/rrezon.jpg";
 import fjolla from "../../../Assets/Teachers/fjolla2.jpg";
 import albion from "../../../Assets/Teachers/Albion2.jpg";
+import Fade from "react-reveal/Fade";
 
 const data = {
   programming: [
@@ -19,7 +20,7 @@ const data = {
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
       img: albrim,
-      id:"albrim-paqarizi"
+      id: "albrim-paqarizi",
     },
     {
       name: "Fatbardh Mulaku",
@@ -29,8 +30,8 @@ const data = {
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
       img: fatbardh,
-      imgStyles:"large",
-      id:"fatbardh-mulaku"
+      imgStyles: "large",
+      id: "fatbardh-mulaku",
     },
     {
       name: "Arber Maksuti",
@@ -40,8 +41,8 @@ const data = {
       behance: "http://www.behance.com",
       linkedin: "http://www.linkedin.com",
       img: arber,
-      imgStyles:"large",
-      id:"arber-maksuti"
+      imgStyles: "large",
+      id: "arber-maksuti",
     },
   ],
   design: [
@@ -77,7 +78,7 @@ const data = {
     },
 
     {
-      name: "Albion Metolli", 
+      name: "Albion Metolli",
       position: "UI/UX Designer",
       facebook: "http://www.facebook.com",
       instagram: "http://www.instagram.com",
@@ -136,7 +137,9 @@ const Teachers = () => {
   return (
     <div className="teachers__teachers">
       <div className="main-container">
-        <FilterButtons items={buttons} selected={selected} />
+        <Fade top big>
+          <FilterButtons items={buttons} selected={selected} />
+        </Fade>
       </div>
 
       <div className="teachers__teachers-area">{renderTeachers()}</div>

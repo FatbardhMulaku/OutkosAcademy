@@ -1,6 +1,7 @@
 import { Checkbox } from "@material-ui/core";
 import React from "react";
 import "./Styles/Filters.scss";
+import Fade from "react-reveal/Fade";
 
 const filters = {
   courses: {
@@ -81,15 +82,17 @@ const filters = {
 };
 const Filters = () => {
   return (
-    <div className="courses__filters">
-      <FilterCategory {...filters.courses} />
-      <div className="price-range">
-        <h2 className="small-title">Price Range</h2>
-        <input type="range" name="" min={0} max={350} step={10} id="" />
+    <Fade left>
+      <div className="courses__filters">
+        <FilterCategory {...filters.courses} />
+        <div className="price-range">
+          <h2 className="small-title">Price Range</h2>
+          <input type="range" name="" min={0} max={350} step={10} id="" />
+        </div>
+        <FilterCategory {...filters.duration} />
+        <FilterCategory {...filters.location} />
       </div>
-      <FilterCategory {...filters.duration} />
-      <FilterCategory {...filters.location} />
-    </div>
+    </Fade>
   );
 };
 

@@ -26,6 +26,7 @@ const Fatbardh = () => {
           <AboutTeacher aboutInfo={data.aboutInfo} />
           <MyCourse data={data.courses}/>
         </div>
+        
         <div className="Profile__stats">
           <Stats
             statsName={stats.total.name}

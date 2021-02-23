@@ -6,6 +6,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FormattedMessage } from "react-intl";
+import Zoom from "react-reveal/Zoom";
+import Fade from 'react-reveal/Fade';
 
 function Teachers() {
   const settings = {
@@ -52,16 +54,18 @@ function Teachers() {
   return (
     <div className="HomeTeachers container">
       <Divider width="12%" />
+      <Fade top big>
       <h1>
         <FormattedMessage
           id="home.teachers.122"
           defaultMessage="Our Best Teachers"
         />
       </h1>
+      </Fade>
       <div className="HomeCourses-area">
         <Slider {...settings}>
           {TeacherData.map((c, i) => {
-            return <TeacherInfo {...c} key={i} />;
+            return <Zoom key={i}><TeacherInfo {...c} key={i} /></Zoom>
           })}
         </Slider>
       </div>

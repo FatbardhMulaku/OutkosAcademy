@@ -8,6 +8,7 @@ import { ReactComponent as Flower } from "../../../Assets/Svg/flower.svg";
 import { ReactComponent as Graph } from "../../../Assets/Svg/graph.svg";
 import { ReactComponent as Cube } from "../../../Assets/Svg/cube-line.svg";
 import { FormattedMessage } from "react-intl";
+import Fade from "react-reveal/Fade";
 
 const Banner = () => {
   return (
@@ -22,51 +23,54 @@ const Banner = () => {
 const BannerContent = () => {
   return (
     <div className="register__banner-content">
-      <h1 className="sub-title">
-        <FormattedMessage
-          id="register.title.1"
-          defaultMessage="Register Now and get these Advantages"
-        />
-      </h1>
-
-      <div className="advantages">
-        <article className="single-advantage">
-          <Clock />{" "}
-          <p className="paragraph-2">
-            <FormattedMessage
-              id="register.item.1"
-              defaultMessage="Learn valuable skills that will be useful in your future."
-            />
-          </p>
-        </article>
-        <article className="single-advantage">
-          <Flower />{" "}
-          <p className="paragraph-2">
-            <FormattedMessage
-              id="register.item.2"
-              defaultMessage="Develop your Creative Thinking and Problem Solving abilities."
-            />
-          </p>
-        </article>
-        <article className="single-advantage">
-          <Graph />{" "}
-          <p className="paragraph-2">
-            <FormattedMessage
-              id="register.item.3"
-              defaultMessage="Benefit from the best opportunity to prepare you for your Career."
-            />
-          </p>
-        </article>
-        <article className="single-advantage">
-          <Cube />{" "}
-          <p className="paragraph-2">
-            <FormattedMessage
-              id="register.item.4"
-              defaultMessage="Perfect place to be for your Next Occupation/Project"
-            />
-          </p>
-        </article>
-      </div>
+      <Fade top big>
+        <h1 className="sub-title">
+          <FormattedMessage
+            id="register.title.1"
+            defaultMessage="Register Now and get these Advantages"
+          />
+        </h1>
+      </Fade>
+      <Fade left cascade>
+        <div className="advantages">
+          <article className="single-advantage">
+            <Clock />{" "}
+            <p className="paragraph-2">
+              <FormattedMessage
+                id="register.item.1"
+                defaultMessage="Learn valuable skills that will be useful in your future."
+              />
+            </p>
+          </article>
+          <article className="single-advantage">
+            <Flower />{" "}
+            <p className="paragraph-2">
+              <FormattedMessage
+                id="register.item.2"
+                defaultMessage="Develop your Creative Thinking and Problem Solving abilities."
+              />
+            </p>
+          </article>
+          <article className="single-advantage">
+            <Graph />{" "}
+            <p className="paragraph-2">
+              <FormattedMessage
+                id="register.item.3"
+                defaultMessage="Benefit from the best opportunity to prepare you for your Career."
+              />
+            </p>
+          </article>
+          <article className="single-advantage">
+            <Cube />{" "}
+            <p className="paragraph-2">
+              <FormattedMessage
+                id="register.item.4"
+                defaultMessage="Perfect place to be for your Next Occupation/Project"
+              />
+            </p>
+          </article>
+        </div>
+      </Fade>
     </div>
   );
 };

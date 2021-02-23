@@ -10,6 +10,8 @@ import { ReactComponent as CourseIcon } from "../../../Assets/Svg/online-course.
 import { ReactComponent as CVupload } from "../../../Assets/Svg/cvupload.svg";
 import { ReactComponent as Linkicon } from "../../../Assets/Svg/linkicon.svg";
 import { selectCourse, selectItems } from "./data";
+import Zoom from 'react-reveal/Zoom';
+
 const Application = () => {
   const [inputs, setInputs] = useState({
     fname: "",
@@ -35,6 +37,7 @@ const Application = () => {
   };
   return (
     <div className="contact-form label-in-border applicationF">
+      <Zoom>
       <form action="">
         <div className="contact-form__row">
           <Input
@@ -125,6 +128,7 @@ const Application = () => {
           Submit
         </button>
       </form>
+      </Zoom>
     </div>
   );
 };

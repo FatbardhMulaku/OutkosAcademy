@@ -1,7 +1,9 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 
 const Stats = (props) => {
   return (
+	<Fade right>
     <div className="Stats">
         <h1>{props.statsName}</h1>
         <div className="Stats--wrapper">
@@ -18,6 +20,7 @@ const Stats = (props) => {
 			</div>
 		</div>
     </div>
+	</Fade>
   );
 };
 
