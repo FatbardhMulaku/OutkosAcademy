@@ -280,5 +280,8 @@
   "ApplicationForm.title.11": "Përfitimet e të qenit mësues",
   "whyOutkos.desc.1": "ofron një kornizë arsimore që bashkon nevojat e tregut dhe konceptin bashkëkohor të mësimdhënies. Ne ofrojmë aftësi teorike dhe praktike, të cilat fitohen shpejt dhe ju kualifikojnë për profesionin e ëndrrave tuaja.",
   "whyOutkos.title.10": "Pse Akademia Outkos?",
-  "whyOutkos.title.span": "Akademia Outkos"
+  "whyOutkos.title.span": "Akademia Outkos",
+  "emptyCart.title.cart":"Shporta juaj",
+  "emptyCart.title":"Duket sikur Shporta juaj është Bosh.",
+  "emptyCart.btn":"Vazhdoni Blerjet"
 }

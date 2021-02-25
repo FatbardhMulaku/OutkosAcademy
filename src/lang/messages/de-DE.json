@@ -279,5 +279,8 @@
 	"ApplicationForm.title.11": "Vorteile eines Lehrers",
 	"whyOutkos.desc.1": "bietet einen Bildungsrahmen, der die Marktbedürfnisse und das zeitgemäße Konzept des Unterrichts miteinander verbindet. Wir bieten sowohl theoretische als auch praktische Fähigkeiten, die schnell erworben werden und Sie für den Beruf Ihrer Träume qualifizieren.",
 	"whyOutkos.title.10": "Warum Outkos Academy?",
-	"whyOutkos.title.span": "Outkos Akademie"
+	"whyOutkos.title.span": "Outkos Akademie",
+	"emptyCart.title.cart":"Ihr Warenkorb",
+	"emptyCart.title":"Sieht aus wie Ihr Warenkorb leer ist.",
+	"emptyCart.btn":"Weiter einkaufen"
 }

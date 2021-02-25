@@ -4,7 +4,6 @@ import ListItem from "../../Shared/ListItem/ListItem";
 import { items } from "./data";
 import { FormattedMessage } from "react-intl";
 import Zoom from "react-reveal/Zoom";
-import RubberBand from "react-reveal/RubberBand";
 import Fade from 'react-reveal/Fade';
 
 function SectionA2() {

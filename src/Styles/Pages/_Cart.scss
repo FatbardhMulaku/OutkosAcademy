@@ -1,3 +1,29 @@
+// Empty cart
+.Empty-cart{
+	padding: 120px 0;
+	padding-top: 150px;
+	& > h2 {
+		font-size: 22px;
+		color: $color-secondary;
+		font-weight: 500;
+		padding-bottom:5px ;
+		padding-left: 15px;
+		border-bottom: 1px solid rgb(219, 219, 219);
+		border-left:1px solid rgb(219, 219, 219);
+		border-right:1px solid rgb(219, 219, 219);
+		border-radius: 5px;
+	}
+	& > h1 {
+		@include defaultTitle($color-secondary, center, 10px);
+		margin-top: 100px;
+	}
+	& > div:nth-child(3){
+		display: flex;
+		justify-content: center;
+		margin: 40px 0;
+	}
+}
+
 .Cart{
 	padding: 150px 0;
 	display: flex;
@@ -5,10 +31,22 @@
 	@include respond(xs){
 		padding-top: 100px;
 	}
+	& > h2 {
+		font-size: 22px;
+		color: $color-secondary;
+		font-weight: 500;
+		padding-bottom:5px ;
+		padding-left: 15px;
+		border-bottom: 1px solid rgb(219, 219, 219);
+		border-left:1px solid rgb(219, 219, 219);
+		border-right:1px solid rgb(219, 219, 219);
+		border-radius: 5px;
+	}
 	&__item{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		margin-top: 40px;
 	}
 	&__total{
 		display: flex;

@@ -279,5 +279,8 @@
   "teachers.banner.title.1": "Carefully Hand-Picked Teachers",
   "whyOutkos.desc.1": "offers an educational framework that merges market needs and the contemporary concept of teaching. We provide both theoretical and practical skills which are quickly acquired and qualify you for the profession of your dreams.",
   "whyOutkos.title.10": "Why Outkos Academy?",
-  "whyOutkos.title.span": "Outkos Academy"
+  "whyOutkos.title.span": "Outkos Academy",
+  "emptyCart.title.cart":"Your Cart",
+  "emptyCart.title":"Looks like your Cart is Empty.",
+  "emptyCart.btn":"Continue Shopping"
 }
