@@ -1,0 +1,82 @@
+.ChatLine {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5px;
+  &2 {
+    flex-direction: row-reverse;
+    & > div:last-child {
+      & > p {
+        text-align: right !important;
+        margin-right: 15px !important;
+      }
+      h5 {
+        background-color: $color-secondary;
+        color: white;
+      }
+    }
+  }
+  & > div:last-child {
+    display: flex;
+    flex-direction: column;
+    h5 {
+      box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+      padding: 8px 10px;
+      border-radius: 12px;
+      margin: 10px 15px;
+    }
+    & > p {
+      text-align: left;
+      color: rgb(172, 172, 172);
+      font-size: 14px;
+      margin-left: 15px;
+    }
+  }
+  &__img1,
+  &__img2,
+  &__img3 {
+    width: 55px;
+    height: 55px;
+  }
+  &__img1 {
+    background-image: url("../../../Assets/Admin/dashboard/chat1.png");
+  }
+  &__img2 {
+    background-image: url("../../../Assets/Admin/dashboard/d2img1.png");
+  }
+  &__img3 {
+    background-image: url("../../../Assets/Admin/dashboard/d2img3.png");
+  }
+}
+
+// DashChat
+.DashChat {
+  width: 29%;
+  @include respond(lg){
+	width: 47%;
+  }
+  @include respond(sm){
+	width: 99%;
+  }
+  &__icon {
+    background-image: url("../../../Assets/Admin/dashboard/send.svg");
+  }
+  &__btn {
+    flex-direction: row-reverse !important;
+    color: #eb8341;
+    background-color: #eb824134;
+    font-size: 18px;
+    height: 45px;
+    align-self: flex-end;
+    padding: 8px 20px !important;
+    & > div {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+  & > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+}

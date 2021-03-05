@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-/* import "./index.css";
-import "./Industries/Industries.css";
-import "./Career/About.css"; */
 import { MenuItem } from "@material-ui/core";
+
 const PopperItem = (props) => {
   return (
     <MenuItem>

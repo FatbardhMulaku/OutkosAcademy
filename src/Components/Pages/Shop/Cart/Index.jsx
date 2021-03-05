@@ -28,12 +28,12 @@ const Index = ({ cart, products }) => {
   if (!cart.length) {
     return (
       <div className="Empty-cart container">
-		  <h2 className="shadow-sm">
-			<FormattedMessage
-				id="emptyCart.title.cart"
-				defaultMessage="Your Cart"
-			/>
-		  </h2>
+        <h2 className="shadow-sm">
+          <FormattedMessage
+            id="emptyCart.title.cart"
+            defaultMessage="Your Cart"
+          />
+        </h2>
         <h1>
           <FormattedMessage
             id="emptyCart.title"
@@ -49,26 +49,25 @@ const Index = ({ cart, products }) => {
           </StyledLink>
         </div>
 
-		
-		<div className="SliderBook">
-			<h2> You Might Like </h2>
-			<div className="SliderBook__books">
-				{products.map((item) => (
-					<BookCard key={item.id} bookData={item}/>
-				))}
-			</div>
-		</div>
-		
+        <div className="SliderBook">
+          <h2> You Might Like </h2>
+          <div className="SliderBook__books">
+            {products.map((item) => (
+              <BookCard key={item.id} bookData={item} />
+            ))}
+          </div>
+        </div>
       </div>
     );
   } else {
     return (
       <div className="Cart container">
         <h2 className="shadow-sm">
-			<FormattedMessage
-				id="emptyCart.title.cart"
-				defaultMessage="Your Cart"
-			/></h2>
+          <FormattedMessage
+            id="emptyCart.title.cart"
+            defaultMessage="Your Cart"
+          />
+        </h2>
         <div className="Cart__item">
           {cart.map((item) => (
             <CartItems key={item.id} itemData={item} />
@@ -104,7 +103,7 @@ const Index = ({ cart, products }) => {
 const mapStateToProps = (state) => {
   return {
     cart: state.shop.cart,
-	products: state.shop.products,
+    products: state.shop.products,
   };
 };
 export default connect(mapStateToProps)(Index);

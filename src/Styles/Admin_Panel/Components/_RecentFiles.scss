@@ -1,0 +1,49 @@
+.RecentFiles {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  @include respond(lg){
+	width: 47%;
+  }
+  @include respond(sm){
+	width: 99%;
+  }
+  & > div:first-child {
+    display: flex;
+	margin-bottom: 20px;
+	p{
+		font-weight: 600;
+		color: rgb(134, 134, 134);
+	}
+  }
+  &>div:last-child{
+	  display: flex;
+	  flex-direction: column;
+  }
+  &__line{
+	  display: flex;
+	  justify-content: space-between;
+	  background-color: rgb(233, 233, 233);
+	  margin: 10px 0;
+	  padding: 15px 12px;
+	  font-size: 15px;
+	  border-radius: 13px;
+	  cursor: pointer;
+	  &:hover{
+		box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.75);
+	  }
+	  &>div:first-child{
+		  display: flex;
+		  h6{
+			  color: $color-primary;
+			  font-weight: 600;
+			  margin-right: 15px;
+		  }
+	  }
+  }
+  &__img{
+	  background-image: url("../../../Assets/Admin/dashboard/down.svg");
+	  width: 21px;
+	  height: 20px;
+  }
+}

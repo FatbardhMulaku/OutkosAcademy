@@ -16,5 +16,8 @@ export const mainMenu = [
 		link: "about-us",
 		name: <FormattedMessage id="header.mainmenu.4" defaultMessage="About Us"/>
 	},
-
-  ];
+  {
+    link: "dashboard",
+    name: <FormattedMessage id="header.mainmenu.8" defaultMessage="Dashboard"/>
+},
+];

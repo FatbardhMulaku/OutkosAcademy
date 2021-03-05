@@ -1,0 +1,30 @@
+.ButtonBtn {
+  display: flex;
+  background-position: center;
+  transition: background 0.8s;
+  border-radius: 20px;
+  cursor: pointer;
+  &:hover {
+    background: #fff radial-gradient(circle, transparent 1%, #fff 1%)
+      center/15000%;
+  }
+  &:active {
+    background-color: rgb(196, 196, 196);
+    background-size: 100%;
+    transition: background 0s;
+  }
+  & > a {
+    display: flex;
+    padding: 5px 15px;
+    border-radius: 15px;
+    @include respond(xs) {
+      font-size: 13px;
+      padding: 5px 10px;
+    }
+    div {
+      width: 15px;
+      height: 15px;
+      margin: auto 5px;
+    }
+  }
+}

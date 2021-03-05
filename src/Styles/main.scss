@@ -43,3 +43,24 @@
 @import "./Pages/Cart";
 @import "./Pages/Checkout";
 
+
+
+
+
+// =================================================
+// ============ Admin panel Styles =================
+// =================================================
+
+// Components
+@import "./Admin_Panel/Components/SideNav";
+@import "./Admin_Panel/Components/DownMenu";
+@import "./Admin_Panel/Components/GraphicDesign";
+@import "./Admin_Panel/Components/NewApplications";
+@import "./Admin_Panel/Components/Button";
+@import "./Admin_Panel/Components/Dash-Schedule";
+@import "./Admin_Panel/Components/LineChart"; 
+@import "./Admin_Panel/Components/ChatLine";
+@import "./Admin_Panel//Components/RecentFiles";
+
+// Pages
+@import "./Admin_Panel/Pages/Dashboard";

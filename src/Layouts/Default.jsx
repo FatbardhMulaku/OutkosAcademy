@@ -1,5 +1,8 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+import Footer from "../Components/Shared/Footer/Footer";
+import Header from "../Components/Shared/Header/Header";
 import CourseList from "../Pages/CourseList";
 import Home from "../Pages/Home";
 import About from "../Pages/About";
@@ -30,10 +33,12 @@ import Rrezon from "../Pages/Teachers/Rrezon";
 import Shop from "../Pages/Shop";
 import Cart from "../Pages/Cart";
 import Checkout from "../Pages/Checkout";
+import SingleItem from "../Pages/SingleBookItem";
 
-const Default = () => {
+const Default = ({ current }) => {
   return (
     <div>
+      <Header/>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/teachers" component={Teachers} />
@@ -65,9 +70,21 @@ const Default = () => {
         <Route exact path="/shop" component={Shop} />
         <Route exact path="/cart" component={Cart} />
         <Route exact path="/checkout" component={Checkout} />
+        {!current ? (
+            <Redirect to="/shop" />
+          ) : (
+            <Route exact path="/book/:id" component={SingleItem} />
+        )}
       </Switch>
+      <Footer />
     </div>
   );
 };
 
-export default Default;
+const mapStateToProps = (state) => {
+  return {
+    current: state.shop.currentItem,
+  };
+};
+
+export default connect(mapStateToProps)(Default);
