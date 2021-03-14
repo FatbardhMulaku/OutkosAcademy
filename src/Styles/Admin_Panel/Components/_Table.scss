@@ -1,0 +1,190 @@
+.Table{
+	&__id{
+		color: $color-primary;
+	}
+	&__head{
+		th{
+			font-weight: bold !important;
+		}
+	}
+	&__submited{
+		display: flex;
+		&>div{
+			width: 40px;
+			height: 40px;
+			background-size: cover;
+			margin: auto 3px;
+		}
+		&__img1{
+			background-image: url("../../../Assets/Admin/dashboard/d2img1.png");
+		}
+		&__img2{
+			background-image: url("../../../Assets/Admin/dashboard/dimg1.png");
+		}
+		&__img3{
+			background-image: url("../../../Assets/Admin/dashboard/d2img2.png");
+		}
+		&__img4{
+			background-image: url("../../../Assets/Admin/dashboard/dimg2.png");
+		}
+		&__img5{
+			background-image: url("../../../Assets/Admin/dashboard/d2img3.png");
+		}
+	}
+	&__Grades{
+		display: flex;
+		h4{
+			color: $color-primary;
+			cursor: pointer;
+		}
+		input{
+			width: 30px;
+			border-bottom: 1px solid black;
+		}
+		& > div:nth-child(2){
+			margin: auto 10px;
+		}
+		& > div:last-child{
+			display: flex;
+			&>div{
+				margin: auto 4px;
+				cursor: pointer;
+				transition: all 0.4s;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				&:hover{
+					transform: scale(1.2);
+				}
+			}
+			& >div:first-child{
+				background-image: url("../../../Assets/Admin/dashboard/tick.svg");	
+				width: 18px;
+				height: 15px;
+			}
+			& >div:last-child{
+				background-image: url("../../../Assets/Admin/dashboard/xx.svg");
+				width: 15px;
+				height: 15px;
+			}
+		}
+	}
+	&__comment{
+		display: flex;
+		input{
+			padding: 4px 6px;
+			background-color: rgb(220, 220, 220);
+			border-radius: 10px;
+			outline: none;
+			border:1px solid transparent;
+			width: 170px !important;
+			&:focus{
+				border-color: $color-primary;
+			}
+		}
+		&--Btn{
+			width: 20px;
+			height: 20px;
+			background-image: url("../../../Assets/Admin/dashboard/sendicon.svg");
+			margin-left: 8px;
+			margin-top: auto;
+			margin-bottom: auto;
+			transition: all 0.4s;
+			cursor: pointer;
+			&:hover{
+				transform: scale(1.2);
+			}
+		}
+	}
+	&__icons{
+		display: flex;
+		&>div{
+			width: 20px;
+			height: 20px;
+			margin-top: auto;
+			margin-bottom: auto;
+			transition: all 0.4s;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			cursor: pointer;
+			&:hover{
+				transform: scale(1.2);
+			}
+		}
+		&>div:first-child{
+			background-image: url("../../../Assets/Admin/dashboard/share.svg");
+			width: 18px;
+		}
+		&>div:nth-child(2){
+			margin: auto 13px;
+			background-image: url("../../../Assets/Admin/dashboard/edit.svg");
+		}
+		&>div:last-child{
+			background-image: url("../../../Assets/Admin/dashboard/delete.svg");
+			width: 18px;
+		}
+	}
+}
+// fotot e submit colon me te bardha
+.sStyle1{
+	&>div:nth-child(3){
+		opacity: 0.4;
+	}
+	&>div:nth-child(4){
+		opacity: 0.4;
+	}
+}
+.sStyle2{
+	&>div:nth-child(2){
+		opacity: 0.4;
+	}
+	&>div:nth-child(3){
+		opacity: 0.4;
+	}
+	&>div:nth-child(4){
+		opacity: 0.4;
+	}
+}
+.sStyle3{
+	&>div:nth-child(1){
+		opacity: 0.4;
+	}
+	&>div:nth-child(2){
+		opacity: 0.4;
+	}
+	&>div:nth-child(3){
+		opacity: 0.4;
+	}
+	&>div:nth-child(4){
+		opacity: 0.4;
+	}
+}
+.sStyle4{
+	&>div:nth-child(1){
+		opacity: 0.4;
+	}
+	&>div:nth-child(2){
+		opacity: 0.4;
+	}
+	&>div:nth-child(3){
+		opacity: 0.4;
+	}
+}
+.sStyle5{
+	&>div:nth-child(1){
+		opacity: 0.4;
+	}
+	&>div:nth-child(2){
+		opacity: 0.4;
+	}
+	&>div:nth-child(3){
+		opacity: 0.4;
+	}
+	&>div:nth-child(4){
+		opacity: 0.4;
+	}
+	&>div:nth-child(5){
+		opacity: 0.4;
+	}
+}

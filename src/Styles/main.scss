@@ -61,6 +61,10 @@
 @import "./Admin_Panel/Components/LineChart"; 
 @import "./Admin_Panel/Components/ChatLine";
 @import "./Admin_Panel//Components/RecentFiles";
+@import "./Admin_Panel/Components/LogOutModal";
+@import "./Admin_Panel/Components/Stepper";
+@import "./Admin_Panel/Components/Table";
 
 // Pages
 @import "./Admin_Panel/Pages/Dashboard";
+@import "./Admin_Panel/Pages/CoursesDashboard";

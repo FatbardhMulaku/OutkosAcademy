@@ -11,14 +11,14 @@ const Schedule = () => {
       </div>
       <div>
         <div>
-          {ScheduleDate.map(({date, desc, info}, index) => (
+          {ScheduleDate.map(({ date, desc, info }, index) => (
             <div key={index}>
-				<h4>{date}</h4>
-				<div>
-					<p>{desc}</p>
-					<p>{info}</p>
-				</div>
-			</div>
+              <h4>{date}</h4>
+              <div>
+                <p>{desc}</p>
+                <p>{info}</p>
+              </div>
+            </div>
           ))}
         </div>
         <Button

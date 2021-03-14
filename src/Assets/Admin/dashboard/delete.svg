@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.8" height="18.5" viewBox="0 0 16.8 18.5">
+  <g id="Group_1386" data-name="Group 1386" transform="translate(0.75 0.75)">
+    <path id="Path_6507" data-name="Path 6507" d="M3,6H18.3" transform="translate(-3 -2.6)" fill="none" stroke="#eb8341" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_6508" data-name="Path 6508" d="M16.9,5.4V17.3A1.7,1.7,0,0,1,15.2,19H6.7A1.7,1.7,0,0,1,5,17.3V5.4m2.55,0V3.7A1.7,1.7,0,0,1,9.25,2h3.4a1.7,1.7,0,0,1,1.7,1.7V5.4" transform="translate(-3.3 -2)" fill="none" stroke="#eb8341" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_99" data-name="Line 99" y2="5" transform="translate(6.2 8)" fill="none" stroke="#eb8341" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_100" data-name="Line 100" y2="5" transform="translate(9.2 8)" fill="none" stroke="#eb8341" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

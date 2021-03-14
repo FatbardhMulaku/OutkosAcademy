@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Line } from "react-chartjs-2";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
@@ -106,7 +106,7 @@ const LineChart = () => {
       </div>
       <Line
         data={data}
-        height={380}
+        height={350}
         options={{
           maintainAspectRatio: false,
         }}

@@ -9,16 +9,18 @@ import { ReactComponent as Schedule } from "../../../../Assets/Admin/nav/icon4.s
 import { ReactComponent as Statistics } from "../../../../Assets/Admin/nav/icon5.svg";
 import { ReactComponent as Settings } from "../../../../Assets/Admin/nav/settings.svg";
 import { ReactComponent as Account } from "../../../../Assets/Admin/nav/account.svg";
-import { ReactComponent as Logout } from "../../../../Assets/Admin/nav/logout.svg";
 import { ReactComponent as Search } from "../../../../Assets/Admin/nav/loupe.svg";
 import Input from "../../../../Components/Shared/Form/Input";
 import {MdKeyboardArrowDown, MdKeyboardArrowUp} from "react-icons/md";
 import DownMenu from "./DownMenu";
+import LogoutModal from "../../LogOut/LogOut";
+import { Link } from "react-router-dom";
 
 const SideMenu = ({ children }) => {
   const [headerToggle, setHeaderToggle] = useState(false);
 
   /*===== LINK ACTIVE  =====*/
+ const addActiveClass = () => {
   const linkColor = document.querySelectorAll(".nav__link");
 
   function colorLink() {
@@ -28,6 +30,7 @@ const SideMenu = ({ children }) => {
     }
   }
   linkColor.forEach((l) => l.addEventListener("click", colorLink));
+ }
 
   const [input, setInput] = useState({
     search: "",
@@ -86,46 +89,44 @@ const SideMenu = ({ children }) => {
             </a>
 
             <div className="nav__list">
-              <a href="#" className="nav__link active">
+              <Link key={11} to="/dashboard" className="nav__link active" onClick={addActiveClass}>
                 <Dashboard className="nav__icon stroke-style" />
                 <span className="nav__name">Dashboard</span>
-              </a>
+              </Link>
 
-              <a href="#" className="nav__link">
+              <Link key={12} to="/dashboard/course" className="nav__link" onClick={addActiveClass}>
                 <Course className="nav__icon stroke-style" />
                 <span className="nav__name">Courses</span>
-              </a>
+              </Link>
 
-              <a href="#" className="nav__link">
+              <Link key={13} to="#" className="nav__link" onClick={addActiveClass}>
                 <Students className="nav__icon stroke-style" />
                 <span className="nav__name">Students</span>
-              </a>
+              </Link>
 
-              <a href="#" className="nav__link">
+              <Link key={14} to="#" className="nav__link" onClick={addActiveClass}>
                 <Schedule className="nav__icon stroke-style" />
                 <span className="nav__name">Schedule</span>
-              </a>
+              </Link>
 
-              <a href="#" className="nav__link">
+              <Link key={15} to="#" className="nav__link" onClick={addActiveClass}>
                 <Statistics className="nav__icon stroke-style" />
                 <span className="nav__name">Statistics</span>
-              </a>
+              </Link>
+              
             </div>
           </div>
 
           <div>
-            <a href="#" className="nav__link">
+            <Link key={16} to="#" className="nav__link" onClick={addActiveClass}>
               <Settings className="nav__icon stroke-style" />
               <span className="nav__name">Settings</span>
-            </a>
-            <a href="#" className="nav__link">
+            </Link>
+            <Link key={17} to="#" className="nav__link" onClick={addActiveClass}>
               <Account className="nav__icon stroke-style" />
               <span className="nav__name">Account</span>
-            </a>
-            <a href="#" className="nav__link">
-              <Logout className="nav__icon stroke-style" />
-              <span className="nav__name">Log Out</span>
-            </a>
+            </Link>
+            <LogoutModal />
           </div>
         </nav>
       </div>

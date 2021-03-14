@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Styles/Contact.scss'
+import "./Styles/Contact.scss";
 import Input from "./Input";
 import TextArea from "./TextArea";
 import { ReactComponent as ID } from "../../../Assets/Svg/id-card.svg";
@@ -25,14 +25,52 @@ const Contact = () => {
     <div className="contact-form label-in-border">
       <form action="">
         <div className="form-row">
-          <Input type="text" label="First Name" icon={<ID className="fill-style stroke-style" />} required id="fname" value={inputs.fname} onChange={handleChange} />
-          <Input type="text" label="Last Name" icon={<ID  className="fill-style stroke-style"/>} required id="lname" value={inputs.lname} onChange={handleChange} />
+          <Input
+            type="text"
+            label="First Name"
+            icon={<ID className="fill-style stroke-style" />}
+            required
+            id="fname"
+            value={inputs.fname}
+            onChange={handleChange}
+          />
+          <Input
+            type="text"
+            label="Last Name"
+            icon={<ID className="fill-style stroke-style" />}
+            required
+            id="lname"
+            value={inputs.lname}
+            onChange={handleChange}
+          />
         </div>
         <div className="form-row">
-          <Input type="text" label="Email" icon={<Mail className="fill-style" />} required id="email" value={inputs.email} onChange={handleChange} />
-          <Input type="tel" label="Phone Number" icon={<Phone className="stroke-style" />} id="phone" value={inputs.phone} onChange={handleChange} />
+          <Input
+            type="text"
+            label="Email"
+            icon={<Mail className="fill-style" />}
+            required
+            id="email"
+            value={inputs.email}
+            onChange={handleChange}
+          />
+          <Input
+            type="tel"
+            label="Phone Number"
+            icon={<Phone className="stroke-style" />}
+            id="phone"
+            value={inputs.phone}
+            onChange={handleChange}
+          />
         </div>
-        <TextArea rows="10" id="message" value={inputs.message} label="Your Message" icon={<Chat className="fill-style stroke-style" />} onChange={handleChange} />
+        <TextArea
+          rows="10"
+          id="message"
+          value={inputs.message}
+          label="Your Message"
+          icon={<Chat className="fill-style stroke-style" />}
+          onChange={handleChange}
+        />
         <button type="submit" className="styled-link bg-primary sm inverse">
           Submit
         </button>

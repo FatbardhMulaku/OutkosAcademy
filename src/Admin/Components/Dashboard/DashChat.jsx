@@ -26,8 +26,8 @@ const DashChat = () => {
             type="text"
             value={input.message}
             icon={<Message className="stroke-style" />}
-            name="search"
-            id="search"
+            name="message"
+            id="message"
             onChange={(e) => handleChange(input, setInput, e)}
             placeholder="Enter your message here..."
           />
