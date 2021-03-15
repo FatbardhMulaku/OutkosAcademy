@@ -99,7 +99,7 @@ const SideMenu = ({ children }) => {
                 <span className="nav__name">Courses</span>
               </Link>
 
-              <Link key={13} to="#" className="nav__link" onClick={addActiveClass}>
+              <Link key={13} to="/dashboard/students" className="nav__link" onClick={addActiveClass}>
                 <Students className="nav__icon stroke-style" />
                 <span className="nav__name">Students</span>
               </Link>

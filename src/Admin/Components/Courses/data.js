@@ -186,13 +186,4 @@ export const DoughnutData = [
   },
 ];
 
-export const GradesComp = <div className="Table__Grades">
-  <h4>View Work</h4>
-  <div>
-    <input />/100
-  </div>
-  <div>
-    <div />
-    <div />
-  </div>
-</div>;
+

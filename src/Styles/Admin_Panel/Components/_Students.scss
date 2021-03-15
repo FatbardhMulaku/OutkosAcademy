@@ -1,0 +1,96 @@
+.Students {
+	& > div:first-child {
+	  & > div {
+		@include comp-layot;
+	  }
+	}
+	& > div:nth-child(2) {
+		& > div {
+			@include comp-layot;
+		  }
+	}
+	& > div:last-child {
+	  & > div:last-child {
+		@include comp-layot;
+		box-shadow: none !important;
+	  }
+	  & > div:last-child{
+		  margin-top: auto;
+		  margin-bottom: auto;
+	  }
+	}
+}
+.Students{
+	&>div:last-child{
+		&>div:first-child{
+			&>div{
+				width: 100% !important;
+				height: 270px;
+			}
+		}
+	}
+	& > div:nth-child(2) {
+		& > div:last-child {
+			& > div{
+				margin-top: 20px;
+				&>div:last-child{
+					height: auto !important;
+					overflow-y: hidden;
+				}
+			}
+		}
+	}
+}
+
+// StudentProgress component 
+.StudentProgress{
+	display: flex;
+	flex-direction: column;
+	width: -webkit-fill-available;
+	h4{
+		font-weight: 600;
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	p{
+		text-align: center;
+		font-weight: 600;
+		margin-top: 10px;
+	}
+	&> div:last-child{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		& > div{
+			transition: all 0.4s;
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+	}
+	&__img1,&__img2,&__img3,&__img4,&__img5{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		@include respond(sm){
+			width: 50px;
+			height: 50px;
+			margin: 2px;
+		}
+	}
+	&__img1{
+		background-image: url("../../../Assets/Admin/dashboard/st1.png");
+	}
+	&__img2{
+		background-image: url("../../../Assets/Admin/dashboard/st2.png");
+	}
+	&__img3{
+		background-image: url("../../../Assets/Admin/dashboard/st3.png");
+	}
+	&__img4{
+		background-image: url("../../../Assets/Admin/dashboard/st4.png");
+	}
+	&__img5{
+		background-image: url("../../../Assets/Admin/dashboard/st5.png");
+	}
+}
